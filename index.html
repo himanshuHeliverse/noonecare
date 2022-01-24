@@ -46,7 +46,7 @@
 			line-height: 43px;
 		}
 
-		.f-24 {
+		.text-xl lg:text-2xl {
 			font-size: 24px;
 			line-height: 36px;
 		}
@@ -57,7 +57,7 @@
 			letter-spacing: -0.015em;
 		}
 
-		.f-18 {
+		.text-lg lg:text-xl {
 			font-size: 18px;
 			line-height: 22px;
 		}
@@ -195,8 +195,7 @@
 		/* hero */
 		#hero {
 			background-color: white;
-		}
-
+}
 		.owl-item.one {
 			/* background-image:  */
 			background: #fff;
@@ -227,6 +226,23 @@
 
 		}
 
+		@media only screen and (max-width: 1300px) {
+			.owl-item.one{
+				background-position: 70% 100%;
+				background-size: cover;
+			}
+			.owl-item.two{
+				background-position: 70% 100%;
+				background-size: cover !important;
+			}
+			.owl-item.three{
+				background-position: 70% 100%;
+				background-size: cover !important;
+			}
+			.owl-carousel .owl-item{
+				min-height: 700px;
+			}
+}
 		.one {
 			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/gry1.svg');
 		}
@@ -328,7 +344,7 @@
 
 
 					<h2 class="f-36 drk-blu-txt">OTP Verification</h2>
-					<h3 class="f-24 drk-blu-txt">please enter the OTP sent to your mobile</h3>
+					<h3 class="text-xl lg:text-2xl drk-blu-txt">please enter the OTP sent to your mobile</h3>
 
 
 
@@ -363,11 +379,11 @@
 					<div class="owl-stage">
 						<div class="owl-item one">
 							<div class="container mx-auto">
-								<div class="max-w-[50%] min-h-[40.3vw] pt-32">
-									<h6 class="text-[#F26975] text-5xl font-bold font-['Camphor']">
+								<div class="max-w-[50%] min-h-[40.3vw] py-20 pt-md:32">
+									<h6 class="text-[#F26975] text-3xl lg:text-5xl font-bold font-['Camphor']">
 										Anup khees, Age-35 yrs
 									</h6>
-									<div class="flex py-4 text-[#989898] text-2xl font-bold font-['Lato']">
+									<div class="flex py-4 text-[#989898] text-xl lg:text-2xl font-bold font-['Lato']">
 										<div class="flex items-center pr-5">
 											<div>
 												<img class="max-w-[40px]" src="https://onecare.co.in/wp-content/uploads/2022/01/Rh+.svg" alt="" />
@@ -381,7 +397,7 @@
 											<h6>50% Reduction</h6>
 										</div>
 									</div>
-									<p class="md:w-[80%] pb-4 text-[#989898] text-xl font-['Lato']">
+									<p class="md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl font-['Lato']">
 										My blood sugar level came down to 92/115 and my medicine dosage also got
 										reduced to half and I'm very sure that it will stop completely in some time.
 										I'm quite impressed with the doctor and health coach's style of personalised
@@ -406,8 +422,8 @@
 						</div>
 						<div class="owl-item two">
 							<div class="container mx-auto">
-								<div class="max-w-[50%] min-h-[40.3vw] pt-32">
-									<h6 class="text-[#28B1DA] text-5xl font-bold font-['Camphor']">
+								<div class="max-w-[50%] min-h-[40.3vw] py-20 pt-lg:32">
+									<h6 class="text-[#28B1DA] text-3xl lg:text-5xl font-bold font-['Camphor']">
 										Don't just fight diabetes, understand & manage it.
 									</h6>
 									<!-- <div class="flex py-4 text-[#989898] text-2xl font-bold font-['Lato']">
@@ -424,7 +440,7 @@
 												<h6>50% Reduction</h6>
 											</div>
 										</div> -->
-									<p class="md:w-[80%] pb-4 text-[#989898] text-xl font-['Lato'] py-8">
+									<p class="md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl font-['Lato'] py-8">
 										Diabetes care is unique to everyone. Beat it with the Right Approach that
 										works for you.
 									</p>
@@ -436,12 +452,12 @@
 						</div>
 						<div class="owl-item three">
 							<div class="container mx-auto">
-								<div class="max-w-[50%] min-h-[40.3vw] pt-32">
-									<h6 class="text-[#F26975] text-5xl font-bold font-['Camphor']">
+								<div class="max-w-[50%] min-h-[40.3vw] py-20 pt-lg:32">
+									<h6 class="text-[#F26975] text-3xl lg:text-5xl font-bold font-['Camphor']">
 										Live a life beyond diabetes, starting today.
 									</h6>
 
-									<p class="md:w-[80%] pb-4 text-[#989898] text-xl font-['Lato'] py-8">
+									<p class="md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl font-['Lato'] py-8">
 										Our team includes leading diabetologists, endocrinologists, diabetes
 										educators, dieticians, health coaches all working with you to build a
 										personalised care plan specific to your need.
@@ -462,24 +478,24 @@
 		<section id="form-wrapper" class="bg-red-50">
 			<div class="container flex mx-auto py-20">
 				<div class="container">
-					<h2 class="font-bold f-36 text-[#F26975] my-20">
-						We know diabetes is a <br />
+					<h2 class="font-bold text-2xl lg:text-4xl text-[#F26975] my-10 my-lg:20 px-10">
+						We know diabetes is a 
 						life-altering diagnosis.
 					</h2>
-					<p class="f-20">
-						Our Comprehensive Clinical Care consists of 1-1 <br />in-depth doctor consultation,
-						expert dietitian sessions, <br />and most importantly, a structured roadmap for your
-						<br />diabetes care. <br /><br />
+					<p class="text-md lg:text-lg px-10" >
+						Our Comprehensive Clinical Care consists of 1-1 in-depth doctor consultation,
+						expert dietitian sessions, and most importantly, a structured roadmap for your
+						diabetes care. 
 						Visit your local OneCare clinic and let's fight it together.
 					</p>
 				</div>
 				<div class="container">
-					<h2 class="font-bold f-36 my-10">
+					<h2 class="font-bold w-1/2 text-2xl lg:text-4xl my-10">
 						Start your<span class="text-[#F26975]">
-							personalised diabetic <br />
+							personalised diabetic 
 							program today!</span>
 					</h2>
-					<form id="form">
+					<form id="form" class="text-lg">
 						<input class="px-8 py-3 w-3/5 border-solid border rounded" type="text" name="name"
 							placeholder="Full Name" required />
 						<br />
@@ -488,17 +504,17 @@
 							placeholder="Phone" pattern="[0-9]{10}" maxlength="10"
 							title="Please enter a valid phone number" required />
 
-						<div class="flex my-5 py-3">
+						<div class="flex my-5">
 							<div class="flex items-center mr-10">
 								<input class="mr-2" type="radio" id="Online" name="consultation" value="Online"
 									checked  />
-								<label class="f-20" for="Online">Online Consultation</label>
+								<label for="Online">Online Consultation</label>
 							</div>
 
 							<div class="flex items-center">
 								<input class="mr-2" type="radio" id="Clinical" name="consultation" value="Clinical"
 									 />
-								<label class="f-20" for="Clinical">Clinical Consultation</label>
+								<label for="Clinical">Clinical Consultation</label>
 							</div>
 						</div>
 
@@ -512,7 +528,7 @@
 
 		<section id="values">
 			<div class="py-20 bg-drk-blu">
-				<div class="container flex flex-row justify-center mx-auto">
+				<div class="container flex flex-col lg:flex-row justify-center items-center mx-auto">
 					<div class="container flex flex-col items-center text-center max-w-xs">
 						<img src="https://onecare.co.in/wp-content/uploads/2022/01/Trust.svg" alt="" />
 						<p class="my-5 f-16 text-white">
@@ -548,11 +564,11 @@
 		<section id="manage" class="py-10">
 			<h2 class="text-center font-bold f-36 my-5">Manage your diabetes in 3 easy steps</h2>
 
-			<div class="container flex justify-center flex-row py-10 mx-auto">
+			<div class="container flex flex-col lg:flex-row justify-center py-10 mx-auto">
 				<div class="container flex flex-col item-center p-5 mx-10 bg-blue-shd">
 					<img src="https://onecare.co.in/wp-content/uploads/2022/01/manage1.svg" alt="" />
 
-					<h4 class="text-center f-24 font-bold drk-blu-txt my-3">Step 1</h4>
+					<h4 class="text-center text-xl lg:text-2xl font-bold drk-blu-txt my-3">Step 1</h4>
 					<p class="text-center my-3 f-16">
 						Meet your team of expert diabetologists, health counsellors, dieticians at OneCare
 						Smart Clinics & get expert diagnosis & insights on your diabetes management.
@@ -562,7 +578,7 @@
 				<div class="container flex flex-col item-center p-5 mx-10 bg-pink-shd">
 					<img src="https://onecare.co.in/wp-content/uploads/2022/01/manage2.svg" alt="" />
 
-					<h4 class="text-center f-24 font-bold drk-blu-txt my-3 ">Step 2</h4>
+					<h4 class="text-center text-xl lg:text-2xl font-bold drk-blu-txt my-3 ">Step 2</h4>
 					<p class=" f-16 text-center my-3 ">
 						Get started on a personalised diabetes management journey designed around your needs
 						to help you realise 10x better outcomes.
@@ -571,7 +587,7 @@
 				<div class="container flex flex-col item-center p-5 mx-10 bg-blue-shd">
 					<img src="https://onecare.co.in/wp-content/uploads/2022/01/manage3.svg" alt="" />
 
-					<h4 class=" f-24 font-bold drk-blu-txt my-3 text-center">Step 3</h4>
+					<h4 class=" text-xl lg:text-2xl font-bold drk-blu-txt my-3 text-center">Step 3</h4>
 					<p class="text-center my-3 f-16">
 						Our panel of dedicated Health Coach will be with you every step of the way guiding you
 						towards a better life beyond diabetes
@@ -583,9 +599,9 @@
 
 
 		<section id=" Diabetologists" class="py-20 bg-blue-shd">
-			<h2 class="text-center font-bold f-36 my-5">Consult with our Expert team of <br />
+			<h2 class="text-center font-bold text-2xl lg:text-4xl my-5">Consult with our Expert team of <br />
 				Endocrinologists & Diabetologists <span class="orange-txt">in Bangalore</span> </h2>
-			<div class="container mx-auto flex items-center ">
+			<div class="container mx-auto flex flex-col lg:flex-row items-center ">
 				<div class=" container items-center flex m-10 border-2 border-white rounded-3xl">
 					<div>
 						<img src="https://onecare.co.in/wp-content/uploads/2022/01/doc1.svg" alt="">
@@ -832,7 +848,7 @@
 
 					<h2 class="f-36 font-bold drk-blu-txt">What our users say!</h2>
 
-					<h2 class="f-24 drk-blu-txt">over 1000 reviews</h2>
+					<h2 class="text-xl lg:text-2xl drk-blu-txt">over 1000 reviews</h2>
 
 
 					<div class="my-10">
@@ -842,7 +858,7 @@
 						<div class="flex items-center bg-white rounded-full  my-5 p-3">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg" alt="">
 							<div>
-								<h3 class="orange-txt font-bold f-18">Deepa Kamath</h3>
+								<h3 class="orange-txt font-bold text-lg lg:text-xl">Deepa Kamath</h3>
 								<p>A great place for total Diabetes care. The front desk and customer care explains the
 									program in detail. Doctors and Dieticians are well qualified.
 									No delay in follow up consultations too! Would recommend to my family n friends</p>
@@ -856,7 +872,7 @@
 						<div class="flex items-center bg-white rounded-full  ml-10 my-5 p-3">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg" alt="">
 							<div>
-								<h3 class="orange-txt font-bold f-18">Sakshi Agarwal</h3>
+								<h3 class="orange-txt font-bold text-lg lg:text-xl">Sakshi Agarwal</h3>
 								<p>From the booking to the consultation the staff was very helpful. The consultation was
 									so insightful. The doctor spent ample time and also answered all my questions. I
 									felt heard and satisfied with his treatment plan. He also made very easy suggestions
@@ -869,7 +885,7 @@
 						<div class="flex items-center bg-white rounded-full  my-5 p-3">
 							<img class="mx-5" src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg" alt="">
 							<div>
-								<h3 class="orange-txt font-bold f-18">Prakash Sharma</h3>
+								<h3 class="orange-txt font-bold text-lg lg:text-xl">Prakash Sharma</h3>
 								<p>The doctor is detail-oriented and listens patiently to what we have to discuss and
 									share. He shows a great friendly gesture which encourages to discuss more about the
 									problems and take proper feedback. </p>
@@ -881,7 +897,7 @@
 						<div class="items-center flex bg-white rounded-full  ml-10  my-5 p-3">
 							<img class="mx-5" src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg" alt="">
 							<div>
-								<h3 class="orange-txt font-bold f-18">Rajesh Talreja </h3>
+								<h3 class="orange-txt font-bold text-lg lg:text-xl">Rajesh Talreja </h3>
 								<p>I found the doctor very cost-effective. The consultation was so insightful and
 									helpful that everything was worth the money. The doctor was also very good and his
 									suggestions were doable. Thanks to OneCare Diabetes Clinic.</p>
@@ -896,7 +912,7 @@
 
 					</div>
 
-					<h3 class="text-right drk-blu-txt f-18 font-bold">Read all customer stories</h3>
+					<h3 class="text-right drk-blu-txt text-lg lg:text-xl font-bold">Read all customer stories</h3>
 
 
 
@@ -941,12 +957,12 @@
 						<div class=" p-5 flex justify-between items-center border">
 
 							<div class="mr-10">
-								<h3 class=" mx-5 drk-blu-txt f-24 font-bold">Bellandur</h3>
+								<h3 class=" mx-5 drk-blu-txt text-xl lg:text-2xl font-bold">Bellandur</h3>
 
 
 								<div class="container flex ">
 									<div class="flex items-start my-3"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo">
-										<p class="f-18">Opposit to, Sobha Quartz, 227,<br />Ground Floor, Off, Outer
+										<p class="text-lg lg:text-xl">Opposit to, Sobha Quartz, 227,<br />Ground Floor, Off, Outer
 											Ring Rd,<br />
 											Green
 											Glen Layout, Bellandur,<br /> Bengaluru, Karnataka 560103</p>
@@ -954,7 +970,7 @@
 
 								</div>
 								<div class="container flex"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="">
-									<h4 class="f-24 ">080 4680 8989</h4>
+									<h4 class="text-xl lg:text-2xl ">080 4680 8989</h4>
 								</div>
 								<div class="container mx-5 my-2 items-center flex">
 									<h4 class="drk-blu-txt">4.9</h4>
@@ -981,19 +997,19 @@
 						<div class="flex p-5 justify-between my-10 items-center border">
 
 							<div class="mr-10">
-								<h3 class="drk-blu-txt font-bold mx-5 f-24">Koramangala</h3>
+								<h3 class="drk-blu-txt font-bold mx-5 text-xl lg:text-2xl">Koramangala</h3>
 
 
 								<div class="container flex ">
 									<div class="flex items-start my-3"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo">
-										<p class="f-18">No. 81, ST Bed Entrance, off 80<br /> Feet Road, Koramangala
+										<p class="text-lg lg:text-xl">No. 81, ST Bed Entrance, off 80<br /> Feet Road, Koramangala
 											4th<br /> Block,
 											Koramangala, Bengaluru,<br /> Karnataka 560034</p>
 									</div>
 
 								</div>
 								<div class="container flex"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="">
-									<h4 class="f-24">080 4680 8989</h4>
+									<h4 class="text-xl lg:text-2xl">080 4680 8989</h4>
 								</div>
 								<div class="container mx-5 my-2 items-center flex">
 									<h4 class="drk-blu-txt font-bold">4.9</h4>
@@ -1017,12 +1033,12 @@
 						<div class="flex p-5 items-center justify-between border">
 
 							<div class="mr-10">
-								<h3 class="drk-blu-txt mx-5 f-24 font-bold">Indiranagar</h3>
+								<h3 class="drk-blu-txt mx-5 text-xl lg:text-2xl font-bold">Indiranagar</h3>
 
 
 								<div class="container flex">
 									<div class="flex items-start my-3"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo">
-										<p class="f-18">505/1 1st A Cross Indiranagar 1st<br /> Stage (Near CMH
+										<p class="text-lg lg:text-xl">505/1 1st A Cross Indiranagar 1st<br /> Stage (Near CMH
 											Hospital/Costa
 											<br />Coffee), Bengaluru, Karnataka <br />560038
 										</p>
@@ -1030,7 +1046,7 @@
 
 								</div>
 								<div class="container flex"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="">
-									<h4 class="f-24">080 4680 8989</h4>
+									<h4 class="text-xl lg:text-2xl">080 4680 8989</h4>
 								</div>
 								<div class="container mx-5 my-2 items-center flex">
 									<h4 class="drk-blu-txt font-bold">4.9</h4>
@@ -1102,7 +1118,7 @@
 				<div class="flex flex-col flex bg-blue-shd items-start p-10 relative rounded-3xl mx-5">
 					<img src="https://onecare.co.in/wp-content/uploads/2022/01/Search.svg" alt="">
 					<div class="py-5 my-5 border-b-2 w-full border-black">
-						<h2 class="drk-blu-txt font-bold f-24">Health & BCM <br />Analysis</h2>
+						<h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">Health & BCM <br />Analysis</h2>
 					</div>
 					<p class="f-16">Understand your unique body composition <br />which helps you identify areas to
 						improve
@@ -1118,7 +1134,7 @@
 				<div class="flex flex-col bg-pink-shd items-start p-10 relative rounded-3xl mx-5">
 					<img src="https://onecare.co.in/wp-content/uploads/2022/01/Stethoscope.svg" alt="">
 					<div class="py-5 my-5 border-b-2 w-full border-black">
-						<h2 class="drk-blu-txt font-bold f-24">Doctor's <br />Consultation</h2>
+						<h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">Doctor's <br />Consultation</h2>
 					</div>
 					<p class="f-16">Understand your diabetes condition and <br /> get a detailed treatment plan to
 						control <br />
@@ -1130,7 +1146,7 @@
 				<div class="flex flex-col  relative bg-blue-shd items-start p-10 rounded-3xl mx-5">
 					<img src="https://onecare.co.in/wp-content/uploads/2022/01/Mortar and Pestle.svg" alt="">
 					<div class="py-5 my-5 border-b-2 w-full border-black">
-						<h2 class="drk-blu-txt font-bold f-24">Expert Dietitian <br />Consultation</h2>
+						<h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">Expert Dietitian <br />Consultation</h2>
 					</div>
 					<p class="f-16">Get a complete lifestyle counseling<br /> along with expert tips and suggestions
 					</p>
@@ -1152,12 +1168,12 @@
 							Skip the travel!
 
 						</h2>
-						<h3 class="f-24 drk-blu-txt">Take Online Doctor Consultation</h3>
+						<h3 class="text-xl lg:text-2xl drk-blu-txt">Take Online Doctor Consultation</h3>
 
 						<h2 class="f-36 my-3">Private consultation + Audio call </h2>
 					</div>
 					<div class="my-20">
-						<a href="#form" class="px-10 f-18 mt-5 bg-cyan-500 py-3 text-white rounded-xl">Book Free
+						<a href="#form" class="px-10 text-lg lg:text-xl mt-5 bg-cyan-500 py-3 text-white rounded-xl">Book Free
 							Appointment
 						</a>
 
@@ -1223,9 +1239,9 @@
 
 
 
-								<h2 class="f-24 drk-blu-txt font-bold">Consult With Top Doctors -<br />
+								<h2 class="text-xl lg:text-2xl drk-blu-txt font-bold">Consult With Top Doctors -<br />
 									At your convenience</h2>
-								<p class="f-18 my-5 drk-blu-txt">Choose to visit our clinics in person or<br /> book an
+								<p class="text-lg lg:text-xl my-5 drk-blu-txt">Choose to visit our clinics in person or<br /> book an
 									online
 									consultation. </p>
 							</div>
@@ -1236,8 +1252,8 @@
 						<div class="flex items-start  my-5">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="">
 							<div>
-								<h2 class="f-24 drk-blu-txt font-bold">Identical clinic experience</h2>
-								<p class=" f-18 my-5 drk-blu-txt">Experience clinic-like consultation<br /> through a
+								<h2 class="text-xl lg:text-2xl drk-blu-txt font-bold">Identical clinic experience</h2>
+								<p class=" text-lg lg:text-xl my-5 drk-blu-txt">Experience clinic-like consultation<br /> through a
 									video call with the
 									doctor. </p>
 							</div>
@@ -1252,8 +1268,8 @@
 						<div class="flex items-start  my-5">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="">
 							<div>
-								<h2 class="f-24 drk-blu-txt font-bold">Simple and convenient</h2>
-								<p class=" f-18 my-5 drk-blu-txt">Within minutes, you can start an instant<br />
+								<h2 class="text-xl lg:text-2xl drk-blu-txt font-bold">Simple and convenient</h2>
+								<p class=" text-lg lg:text-xl my-5 drk-blu-txt">Within minutes, you can start an instant<br />
 									consultation or book a
 									video
 									appointment.ltation. </p>
@@ -1266,8 +1282,8 @@
 
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="">
 							<div>
-								<h2 class="f-24 drk-blu-txt font-bold">First consultation is Free! </h2>
-								<p class=" f-18 my-5 drk-blu-txt">Get a consultation with your favorite <br /> doctor
+								<h2 class="text-xl lg:text-2xl drk-blu-txt font-bold">First consultation is Free! </h2>
+								<p class=" text-lg lg:text-xl my-5 drk-blu-txt">Get a consultation with your favorite <br /> doctor
 									for free, </p>
 
 
@@ -1280,8 +1296,8 @@
 							<div>
 
 
-								<h2 class="f-24 drk-blu-txt font-bold">Risk-free consultation</h2>
-								<p class=" my-5 f-18 drk-blu-txt  ">Your online consultation will be<br /> completely
+								<h2 class="text-xl lg:text-2xl drk-blu-txt font-bold">Risk-free consultation</h2>
+								<p class=" my-5 text-lg lg:text-xl drk-blu-txt  ">Your online consultation will be<br /> completely
 									confidential and safe.
 								</p>
 							</div>
@@ -1303,18 +1319,18 @@
 
 
 
-				<h2 class=" drk-blu-txt f-36 font-bold text-center">How technology-enabled OneCare Diabetes Clinics
+				<h2 class=" drk-blu-txt text-2xl lg:text-4xl font-bold text-center">How technology-enabled OneCare Diabetes Clinics
 					provide better outcomes:</h2>
 				<div class=" py-20 ">
 
 
 					<div class="flex justify-around my-5">
-						<p class="w-1/2 f-24 s"></p>
+						<p class="w-1/2 text-xl lg:text-2xl s"></p>
 						<div class="">
-							<p class=" f-24 font-bold blue-txt mr-5">OneCare Smart<br />
+							<p class=" text-xl lg:text-2xl font-bold blue-txt mr-5">OneCare Smart<br />
 								Diabetes Clinics</p>
 						</div>
-						<div class=" w-36 drk-blu-txt f-24 font-bold">
+						<div class=" w-36 drk-blu-txt text-xl lg:text-2xl font-bold">
 							<p>Other
 								<br /> Clinics
 							</p>
@@ -1323,16 +1339,16 @@
 					</div>
 					<div class="flex justify-around my-10">
 
-						<p class="w-1/2 f-24 font-bold">Top endocrinologists and Diabetologists</p>
+						<p class="w-1/2 text-xl lg:text-2xl font-bold">Top endocrinologists and Diabetologists</p>
 						<div class="flex w-36 items-center">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
-							<h4 class="f-18">10+ years of<br />
+							<h4 class="text-lg lg:text-xl">10+ years of<br />
 								experience</h4>
 						</div>
 						<div class="flex  w-36 items-center">
 							<img class=" mx-2" src="https://onecare.co.in/wp-content/uploads/2022/01/Box Important.svg" alt="logo" />
-							<h4 class=" f-18">varied<br />
+							<h4 class=" text-lg lg:text-xl">varied<br />
 								experience</h4>
 						</div>
 					</div>
@@ -1340,7 +1356,7 @@
 
 					<div class="flex justify-around my-10">
 
-						<p class="w-1/2 f-24 font-bold">Personalized & Sustainable Diabetes control program</p>
+						<p class="w-1/2 text-xl lg:text-2xl font-bold">Personalized & Sustainable Diabetes control program</p>
 						<div class="w-36">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
@@ -1355,7 +1371,7 @@
 
 					<div class="flex justify-around my-10">
 
-						<p class="w-1/2 f-24 font-bold">Smart & remote monitoring by OneCare mobile app</p>
+						<p class="w-1/2 text-xl lg:text-2xl font-bold">Smart & remote monitoring by OneCare mobile app</p>
 						<div class="w-36">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
@@ -1370,7 +1386,7 @@
 
 					<div class="flex justify-around my-10">
 
-						<p class="w-1/2 f-24 font-bold">24*7 access to expert dietician</p>
+						<p class="w-1/2 text-xl lg:text-2xl font-bold">24*7 access to expert dietician</p>
 						<div class="w-36">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
@@ -1385,7 +1401,7 @@
 
 					<div class="flex justify-around my-10">
 
-						<p class="w-1/2 f-24 font-bold">Dedicated coach with free Weekly Sessions</p>
+						<p class="w-1/2 text-xl lg:text-2xl font-bold">Dedicated coach with free Weekly Sessions</p>
 						<div class="w-36">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
@@ -1400,7 +1416,7 @@
 
 					<div class="flex justify-around my-10">
 
-						<p class="w-1/2 f-24 font-bold">Free unlimited doctor Follow-ups</p>
+						<p class="w-1/2 text-xl lg:text-2xl font-bold">Free unlimited doctor Follow-ups</p>
 						<div class="w-36">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
@@ -1412,7 +1428,7 @@
 					</div>
 					<div class="flex justify-around my-10">
 
-						<p class="w-1/2 f-24 font-bold">
+						<p class="w-1/2 text-xl lg:text-2xl font-bold">
 							Focus on controlling & Reversing Diabetes</p>
 						<div class="w-36">
 							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
