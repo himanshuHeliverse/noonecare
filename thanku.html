@@ -1,0 +1,1102 @@
+<?php
+/*
+ * Template Name: onecareWeb_thanku
+*/
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+      <link
+      rel="icon"
+      href="https://onecare.co.in/wp-content/uploads/2022/01/favicon.webp"
+    />
+
+    <title>OneCare</title>
+    <link rel="canonical" href="https://onecare.co.in" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="//db.onlinewebfonts.com/c/541ce9a3a5f1d9996b89eb0b0e5a9d9b?family=Camphor" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+    <style>
+        body {
+            -webkit-animation: -start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -start 8s steps(1, end) 0s 1 normal both;
+            animation: -start 8s steps(1, end) 0s 1 normal both
+        }
+
+
+        body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none
+        }
+
+
+        .primary-button {
+        border-radius: 30px;
+        padding: 0.5em 2em;
+        color: white;
+        text-transform: capitalize;
+      }
+
+        .orange-bg {
+        background: #f8a425;
+      }  nav {
+        background-color: white;
+      }    .accordion-item:not(:first-of-type) {
+        border: 1px solid rgb(229 231 235) !important;
+      }     .blu-btn:hover {
+        background-color: #0075ff99;
+      }
+      .org-btn:hover{
+        background: linear-gradient(90.13deg, #ffd28a -6.56%, #f16679 177.9%);
+
+      }
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+            font-family: "Lato", sans-serif;
+        }
+
+        #container {
+            max-width: 1200px;
+            background: #f6f6f6;
+            margin: auto
+        }
+
+
+        h1 {
+            color: #4e4e4e;
+            letter-spacing: 0em;
+            margin: 10px 0px;
+        }
+
+        h2 {
+            color: #4e4e4e;
+            margin: 10px 0px;
+            letter-spacing: 0em;
+        }
+
+        h3 {
+            color: #4e4e4e;
+            margin: 10px 0px;
+        }
+
+        h4 {
+            color: #4e4e4e;
+        }
+
+        p {
+            color: #4e4e4e;
+        }
+
+        .pink-shd {
+            background: linear-gradient(180deg, #ffd7e2 -4.33%, #ffefd4 109.25%);
+        }
+
+        .blu-txt {
+            color: #28b1da;
+        }
+
+        .blue-bg {
+            color: white;
+            background: #28b1da;
+        }
+
+        .orange-txt {
+            color: #f07162;
+        }
+
+        .gray-txt {
+            color: #787b7d;
+        }
+
+        .drk-blu-txt {
+            color: #14566a;
+        }
+
+        .center-txt {
+            text-align: center;
+        }
+
+        .pink-txt {
+            color: #f1647b;
+        }
+
+        .black {
+            color: #4e4e4e;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .flex1 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .f-s-30 {
+            font-size: 36px;
+            line-height: 46px;
+        }
+
+        .f-s-24 {
+            font-size: 24px;
+            line-height: 40px;
+        }
+
+        .f-s-18 {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        .f-s-16 {
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        .f-s-14 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .f-s-10 {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        .f-s-12 {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        .f-w-400 {
+            font-weight: 400;
+        }
+
+        .f-w-700 {
+            font-weight: 700;
+        }
+
+        .f-w-600 {
+            font-weight: 600;
+        }
+
+        .f-w-500 {
+            font-weight: 500;
+        }
+
+        .f-s-i {
+            font-family: "Inter";
+        }
+
+        .f-s-r {
+            font-family: "Roboto";
+        }
+
+        .f-s-L {
+            font-family: "Libre Caslon Text", serif;
+        }
+
+        .f-s-LR {
+            font-family: "Libre Baskerville", serif;
+        }
+
+        .m-t-10 {
+            margin: 10px 0px;
+        }
+
+        footer nav div {
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            background-color: white;
+        }
+
+        footer nav div:last-child h3 {
+            font-weight: 100;
+        }
+
+        footer nav {
+            justify-content: center;
+            padding: 10px;
+            height: 100%;
+            width: 95%;
+            align-items: center;
+            display: flex;
+            margin: auto;
+        }
+
+        .logo {
+            margin-right: 15px;
+            width: 165px;
+        }
+
+        footer nav div:last-child {
+            border-left: 1px solid gray;
+            padding: 0px 10px;
+            font-weight: 100;
+        }
+
+        #user-say-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #user-say-wrapper>div {
+            flex: 1;
+            position: relative;
+        }
+
+        #over-say-review-wrapper>div {
+            margin: 20px auto;
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            border-radius: 10px;
+            /* width: 80%; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .over-say-review-img-wrapper {
+
+            padding: 5px;
+            margin: auto;
+            border: 1px solid #c4c4c4;
+            border-radius: 100px;
+        }
+
+        .over-say-review-detail-wrapper {
+            width: 75%;
+        }
+
+        #top {
+            position: relative;
+        }
+
+        .study-img {
+            margin-left: auto;
+
+
+        }
+
+
+        #top,
+        #FAQ {
+            background: #D9F4FF;
+        }
+
+        #FAQ div {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        #FAQ div>div {
+            padding: 10px 20px;
+            background-color: #28b1da;
+            margin: 20px;
+            justify-content: space-between;
+
+            box-shadow: 0px 20px 40px 0px #eef0f2;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        .accordion__header {
+            border: none;
+            background-color: white;
+            border-radius: 10px;
+            padding: 0px 10px;
+            box-shadow: 0px 20px 40px 0px #eef0f2;
+        }
+
+        .btn {
+            max-width: 300px;
+            margin: 40px auto;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 6px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-TFT8B5L');</script>
+</head>
+
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFT8B5L"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+    <div id="container">
+
+        <nav>
+            <div class="flex container mx-auto justify-between py-5">
+              <div class="flex items-center">
+                <a href="/" id="logo">
+                  <img
+                    src="https://onecare.co.in/wp-content/uploads/2022/01/logo.svg"
+                    alt="onecare-logo"
+                    class="pr-2"
+                  />
+                </a>
+                <div class="logo-text pl-2 text=['#58595B']"  style="border-left: 1px solid #58595B;">
+                  <p class="gry-txt">A CHAIN OF SMART<br/>
+                  DIABETES CLINICS</p>
+                </div>
+              </div>
+              <div class="flex flex-d items-center">
+                <a
+                  href="#08046808989"
+                  class="flex items-center mr-2 my-2 blu-btn rounded-lg primary-button blue-bg font-['Inter'] font-bold"
+                >
+                  <i class="fa fa-phone mr-2"></i>
+                  CONTACT US
+                </a>
+                <a
+                  href="#form-wrapper"
+                  class="flex items-center ml-2 my-2 primary-button rounded-lg orange-bg font-['Inter'] font-bold"
+                >
+                  <i class="fa fa-calculator mr-2"></i>
+                  BOOK AN APPOINTMENT
+                </a>
+              </div>
+            </div>
+          </nav>
+
+
+        <section id="top">
+
+            <div class="container mx-auto">
+                <h1 class=" f-s-30 pink-txt center-txt ">Thank you for sharing your details.</h1>
+                <h4 class="f-s-24 center-txt">We will reach out to you shortly & help you with your query.</h4>
+
+
+                <div class=" btn center-txt blue-bg">
+                    <a class=" white " href="/index.html">Continue Exploring</a>
+                </div>
+
+                <div class="flex1">
+                    <div>
+                        <h2 class="pink-txt f-s-30">Every Diabetes Battle Is Unique.<br />
+                            <span style="color: black;">
+                                We're Here To Help<br /> You Through Yours
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="study-img">
+
+                        <img style="width: 600px;" src="https://onecare.co.in/wp-content/uploads/2022/01/study.png"
+                            alt="logo" />
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+        <section id="user-say" class="pink-shd">
+            <div class="container mx-auto" id="user-say-wrapper">
+                <div id="over-say-review">
+                    <h1 class="f-s-24 f-w-700 center-txt">Our Verified Customer reviews</h1>
+                    <p class="f-s-14 f-w-400 center-txt f-s-LR">1000+ reviews</p>
+
+                    <div id="over-say-review-wrapper">
+                        <div>
+                            <div class="over-say-review-img-wrapper">
+                                <img src="https://onecare.co.in/wp-content/uploads/2022/01/google.webp " alt="" />
+
+                            </div>
+                            <div class="over-say-review-detail-wrapper">
+                                <h4 class="f-s-16 f-s-700 orange-txt">Laxminarasimha Reddy</h4>
+                                <p style="font-style: italic" class="f-s-12 gray-txt f-w-400">
+                                    Verified Customer
+                                </p>
+                                <div style="width: 60px; margin: 5px 0px">
+                                    <div style="width: 60px; margin: 5px 0px">
+                                        <p class="flex">
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="f-s-14 f-w-400 gray-txt">
+                                    I came all the way from Gulbarga I am Very Happy with Service. Highly
+                                    professional staff and Doctor thanks to Dr Vikram and Vasu
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="over-say-review-img-wrapper">
+                                <img src="https://onecare.co.in/wp-content/uploads/2022/01/google.webp"
+                                    layout="responsive" alt="">
+                                </img>
+                            </div>
+
+                            <div class="over-say-review-detail-wrapper">
+                                <h4 class="f-s-16 f-w-700 orange-txt">Deepa Gupta</h4>
+                                <p style="font-style: italic" class="f-s-12 gray-txt f-w-400">
+                                    Verified Customer
+                                </p>
+                                <div style="width: 60px; margin: 5px 0px">
+                                    <div style="width: 60px; margin: 5px 0px">
+                                        <p class="flex">
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="f-s-14 f-w-400 gray-txt">
+                                    A great place for total Diabetes care. The front desk and customer care explains
+                                    the program in detail. Doctors and Dieticians are well qualified. No delay in
+                                    follow up consultations too! Would recommend to my family n friends.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="over-say-review-img-wrapper">
+                                <img src="https://onecare.co.in/wp-content/uploads/2022/01/google.webp" alt="" />
+
+                            </div>
+                            <div class="over-say-review-detail-wrapper">
+                                <h4 class="f-s-16 f-w-700 orange-txt">Sakshi Agarwal</h4>
+                                <p style="font-style: italic" class="f-s-12 gray-txt f-w-400">
+                                    Verified Customer
+                                </p>
+                                <div style="width: 60px; margin: 5px 0px">
+                                    <div style="width: 60px; margin: 5px 0px">
+                                        <p class="flex">
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="f-s-14 f-w-400 gray-txt">
+                                    From the booking to the consultation the staff was very helpful. The
+                                    consultation was so insightful. The doctor spent ample time and also answered
+                                    all my questions. I felt heard and satisfied with his treatment plan. He also
+                                    made very easy suggestions which has motivated me.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="over-say-review-img-wrapper" style="padding: 14px 5px;">
+                                <img src="https://onecare.co.in/wp-content/uploads/2022/01/p.svg" layout="responsive"
+                                    alt="">
+                                </img>
+                            </div>
+                            <div class="over-say-review-detail-wrapper">
+                                <h4 class="f-s-16 f-w-700 orange-txt">Prakash Sharma</h4>
+                                <p style="font-style: italic" class="f-s-12 gray-txt f-w-400">
+                                    Verified Customer
+                                </p>
+                                <div style="width: 60px; margin: 5px 0px">
+                                    <div style="width: 60px; margin: 5px 0px">
+                                        <p class="flex">
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="f-s-14 f-w-400 gray-txt">
+                                    The doctor is detail-oriented and listens patiently to what we have to discuss
+                                    and share. He shows a great friendly gesture which encourages to discuss more
+                                    about the problems and take proper feedback.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="over-say-review-img-wrapper" style="padding: 14px 5px;">
+                                <img src="https://onecare.co.in/wp-content/uploads/2022/01/p.svg" layout="responsive"
+                                    alt="">
+                                </img>
+                            </div>
+                            <div class="over-say-review-detail-wrapper">
+                                <h4 class="f-s-16 f-w-700 orange-txt">Akanksha Pandey</h4>
+                                <p style="font-style: italic" class="f-s-12 gray-txt f-w-400">
+                                    Verified Customer
+                                </p>
+                                <div style="width: 60px; margin: 5px 0px">
+                                    <div style="width: 60px; margin: 5px 0px">
+                                        <p class="flex">
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="f-s-14 f-w-400 gray-txt">
+                                    Dr. Basavaraj always takes the time to make the patient feel at ease. Instead of
+                                    just prescribing the medicine, he explains what it is for and why it is
+                                    important. In case of any changes too, he explains why he is making the change
+                                    and what we can expect out of it which helps in creating a lot more confidence
+                                    in him. The best thing about him is that he works towards cure and prevention
+                                    and not just management.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="over-say-review-img-wrapper" style="padding: 14px 5px;">
+                                <img src="https://onecare.co.in/wp-content/uploads/2022/01/p.svg" alt="">
+                                </img>
+                            </div>
+                            <div class="over-say-review-detail-wrapper">
+                                <h4 class="f-s-16 f-w-700 orange-txt">Gayatri</h4>
+                                <p style="font-style: italic" class="f-s-12 gray-txt f-w-400">
+                                    Verified Customer
+                                </p>
+                                <div style="width: 60px; margin: 5px 0px">
+                                    <p class="flex">
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                    </p>
+                                </div>
+                                <p class="f-s-14 f-w-400 gray-txt">
+                                    Doctor Basavaraj is a brilliant doctor, when I was struggling with medication
+                                    for my mother for high diabetes after hav6ng her operation, we met Dr Basavaraj.
+                                    Within a week he solved the problem to a la2ge extent. My mother likes to visit
+                                    The OneCare Diabetes clinic for his patience and polite approach to handle
+                                    patient queries.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="over-say-review-img-wrapper" style="padding: 14px 5px;">
+                                <img src="https://onecare.co.in/wp-content/uploads/2022/01/p.svg" layout="responsive"
+                                    alt="">
+                                </img>
+                            </div>
+                            <div class="over-say-review-detail-wrapper">
+                                <h4 class="f-s-16 f-w-700 orange-txt">Rajesh Talreja</h4>
+                                <p style="font-style: italic" class="f-s-12 gray-txt f-w-400">
+                                    Verified Customer
+                                </p>
+                                <div style="width: 60px; margin: 5px 0px">
+                                    <div style="width: 60px; margin: 5px 0px">
+                                        <p class="flex">
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="f-s-14 f-w-400 gray-txt">
+                                    I found the doctor very cost-effective. The consultation was so insightful and
+                                    helpful that everything was worth the money. The doctor was also very good and
+                                    his suggestions were doable. Thanks to OneCare Diabetes Clinic.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="bg-[#FFF5E7]">
+            <div class="container mx-auto p-12">
+              <h3   class="text-4xl text-center p-5 font-['Roboto'] text-[#2A475C] font-bold">
+                FAQs
+              </h3>
+              <div class="flex justify-around flex-d">
+                <div class="accordion r flex-1 m-10" id="accordionExample">
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingOne">
+                      <button 
+                        class="accordion-button n collapsed  relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none "
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        What is Type 2 diabetes?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse "
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        Your pancreas, an organ positioned between your stomach and
+                        backbone that aids digestion releases insulin into your
+                        blood. Insulin assists your blood in transporting glucose to
+                        all of your body's cells. Sometimes your body does not
+                        produce enough insulin, or the insulin does not function
+                        properly. Glucose remains in your blood and does not reach
+                        your cells as a result. When your blood glucose levels
+                        become too high, it might lead to diabetes or prediabetes.
+                        Having too much glucose in your blood might lead to health
+                        concerns over time.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingtwo">
+                      <button
+                        class="accordion-button n collapsed  relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsetwo"
+                        aria-expanded="false"
+                        aria-controls="collapsetwo"
+                      >
+                        How is diabetes diagnosed?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapsetwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingtwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        <div>
+                          Diabetes is frequently diagnosed clinically as a result of
+                          symptoms such as increased thirst and urination, as well
+                          as recurring infections. Diabetes can be diagnosed by
+                          blood glucose (FBBS which is a fasting blood sugar test
+                          and PPBS which is a post meal sugar test) and HBA1c levels
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingthree">
+                      <button
+                        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-lg transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsethree"
+                        aria-expanded="false"
+                        aria-controls="collapsethree"
+                      >
+                        Can diabetes be managed with medicines alone?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapsethree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingthree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        No. Diabetes is a lifestyle disorder which cannot be managed
+                        with medicines alone. Many factors like diet, physical
+                        activity, stress and other lifestyle habits play a role in
+                        reversal.
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingFour">
+                      <button
+                        class="accordion-button  collapsed   relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        What is the OneCare IMPACT program?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse "
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        <div>
+                          The OneCare IMPACT program aims to provide a path for
+                          diabetes care. In the entire treatment process the
+                          following services are provided:
+                        </div>
+                        <ol>
+                          <li>Highly qualified dedicated health coach</li>
+                          <li>Yoga and Lifestyle coach</li>
+                          <li>Connected Devices to monitor health parameters</li>
+                          <li>
+                            Repeat Virtual Consultations with best diabetic doctors
+                            in bangalore
+                          </li>
+                          <li>Mobile App with Clinic</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingFive">
+                      <button
+                        class="accordion-button  collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="true"
+                        aria-controls="collapseFive"
+                      >
+                        Will the program be customized to my needs?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFive"
+                      class="accordion-collapse collapse "
+                      aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        <div>
+                          Yes. We customize and personalize the entire program
+                          according to your needs. We make changes which you can
+                          make and our health coach makes a collaborative plan.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingSix">
+                      <button
+                        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                      >
+                        Who is a health coach?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseSix"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingSix"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        <div>
+                          Health Coaches are experts in health, nutrition, exercise,
+                          and motivational psychology. Health coaches partner with
+                          their clients to help them set and reach goals for
+                          satisfying and healthy lives. They identify factors that
+                          need to change and how they can achieve diabetes reversal.
+                          Health Coaches can support their clients to find a healthy
+                          balance in areas such as:
+                        </div>
+                        <ul>
+                          <li>Weight loss</li>
+                          <li>Stress management</li>
+                          <li>Start an exercise routine</li>
+                          <li>Improve diet/nutrition</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion flex-1 m-10" id="accordionExample2">
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingseven">
+                      <button
+                        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseseven"
+                        aria-expanded="false"
+                        aria-controls="collapseseven"
+                      >
+                        What are the complications of type 2 diabetes?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseseven"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingseven"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        <div>
+                          Type 2 diabetes increases the risk of developing several
+                          medical complications. These can include:
+                        </div>
+                        <ul>
+                          <li>Heart and blood vessel problems</li>
+                          <li>Kidney damage (nephropathy)</li>
+                          <li>Eye damage (retinopathy)</li>
+                          <li>Foot damage and amputation</li>
+                          <li>Depression or diabetes distress</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingeight">
+                      <button
+                        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseeight"
+                        aria-expanded="false"
+                        aria-controls="collapseeight"
+                      >
+                        Can diabetes be cured?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseeight"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingeight"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        Diabetes is a lifestyle disorder. Type 2 diabetes can be
+                        “reversed” but not “cured” because the disease will come
+                        back if long-term healthy lifestyle is not successfully
+                        maintained.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingnine">
+                      <button
+                        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsenine"
+                        aria-expanded="false"
+                        aria-controls="collapsenine"
+                      >
+                        What does OneCare offer?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapsenine"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingnine"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        <div>
+                          OneCare - India's first chain of Smart diabetes Clinics
+                          offer personalised diabetes programmes that's right for
+                          you. Our Comprehensive clinical care consists of 1-1-
+                          in-depth doctor consultations, expert dietitian sessions,
+                          and most importantly, a structured roadmap for your
+                          diabetes care.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingten">
+                      <button
+                        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseten"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                      >
+                        Is this program sufficient to manage my diabetes?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseten"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingten"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        Yes. The OneCare diabetes program takes complete care of
+                        your diabetes. We connect you to the best endocrinologist,
+                        best diabetes specialist, expert health coaches which takes
+                        complete care of your condition.
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingeleven">
+                      <button
+                        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseeleven"
+                        aria-expanded="false"
+                        aria-controls="collapseeleven"
+                      >
+                        What are the benefits of the program?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseeleven"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingeleven"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        <div>
+                          Apart from blood sugar reduction, other benefits of the
+                          program are:
+                        </div>
+                        <ul>
+                          <li>
+                            Reduction in acidity, pains, digestion problems, feeling
+                            lighter
+                          </li>
+                          <li>Drop in weight</li>
+                          <li>Raised energy levels</li>
+                          <li>Improvement in stamina, flexibility and strength</li>
+                          <li>
+                            Drop in sugar levels and/ or drop in medications (for
+                            diabetics)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-white border border-gray-200 mb-10">
+                    <h2 class="accordion-header mb-0" id="headingtwelve">
+                      <button
+                        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsetwelve"
+                        aria-expanded="false"
+                        aria-controls="collapsetwelve"
+                      >
+                        Will the health coach offer me personal counselling?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapsetwelve"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingtwelve"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body py-4 px-5">
+                        Yes, The health coach will give you a personalised plan
+                        which will cater to your needs and goals.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+
+
+        <footer>
+            <nav class="container">
+                <div class="logo-wrapper">
+                    <a href="/" class="logo">
+                        <img src="https://onecare.co.in/wp-content/uploads/2022/01/logo.svg" alt="logo">
+                        </img>
+                    </a>
+                </div>
+                <div>
+                    <h3 class="f-s-16 f-w-500 gray-txt web">A Chain of <br />Smart Diabetes Clinics</h3>
+                </div>
+            </nav>
+        </footer>
+        <div style="padding: 10px">
+            <h4 class="center-txt f-s-14 f-w-400">© 2021, OneCare. All Rights Reserved</h4>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<?php>

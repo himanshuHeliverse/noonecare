@@ -93,6 +93,17 @@ nav{
   background-size:contain;
 
 }
+.owl-item.three{
+  background:#fff;
+  background-image:url('https://onecare.co.in/wp-content/uploads/2022/01/lady-doc-banner.png');
+  background-image:linear-gradient(360deg, rgba(255, 245, 231, 0.8) 0%, rgba(255, 255, 255, 0) 27.42%), url('.https://onecare.co.in/wp-content/uploads/2022/01/lady-doc-banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+
+}
+
+
 .one{
   background-image: url('./assest/gry1.svg');
 }
