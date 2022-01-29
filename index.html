@@ -1,1591 +1,1394 @@
-<?php
-/*
- * Template Name: onecareWeb
-*/
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One Care</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="icon"
-      href="https://onecare.co.in/wp-content/uploads/2022/01/favicon.webp"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="//db.onlinewebfonts.com/c/541ce9a3a5f1d9996b89eb0b0e5a9d9b?family=Camphor"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="A Chain of Smart Diabetes Clinics.">
+  <link rel="canonical" href="https://onecare.co.in" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Care</title>
 
-    <style>
+  <link rel="icon" href="https://onecare.co.in/wp-content/uploads/2022/01/favicon.webp" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-* {
-			margin: 0;
-			padding: 0;
-			-webkit-font-smoothing: antialiased;
-			box-sizing: border-box;
-			font-family: "Lato", sans-serif;
-		}
-		.f-w-400 {
-			font-weight: 400;
-		}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="//db.onlinewebfonts.com/c/541ce9a3a5f1d9996b89eb0b0e5a9d9b?family=Camphor" rel="stylesheet"
+    type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-		.f-w-700 {
-			font-weight: 700;
-		}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      box-sizing: border-box;
+      font-family: "Lato", sans-serif;
+    }
 
-		.f-w-600 {
-			font-weight: 600;
-		}
+    .f-w-400 {
+      font-weight: 400;
+    }
 
-		.f-w-500 {
-			font-weight: 500;
-		}
+    .f-w-700 {
+      font-weight: 700;
+    }
 
-		.f-s-i {
-			font-family: "Inter";
-		}
+    .f-w-600 {
+      font-weight: 600;
+    }
 
-		.f-s-r {
-			font-family: "Roboto";
-		}
+    .f-w-500 {
+      font-weight: 500;
+    }
 
-		.f-s-L {
-			font-family: "Libre Caslon Text", serif;
-		}
+    .f-s-i {
+      font-family: "Inter";
+    }
 
-		.f-s-LR {
-			font-family: "Libre Baskerville", serif;
-		}
-      .f-42 {
-        font-size: 46px;
-        line-height: 64px;
-        letter-spacing: -1.1200000047683716px;
-      }
+    .f-s-r {
+      font-family: "Roboto";
+    }
 
-      .f-36 {
-        font-size: 36px;
-        line-height: 43px;
-      }
+    .f-s-L {
+      font-family: "Libre Caslon Text", serif;
+    }
 
-      .text-xl lg:text-2xl {
-        font-size: 24px;
-        line-height: 36px;
-      }
+    .f-s-LR {
+      font-family: "Libre Baskerville", serif;
+    }
 
-      .f-20 {
-        font-size: 20px;
-        line-height: 32px;
-        letter-spacing: -0.015em;
-      }
+    .f-42 {
+      font-size: 46px;
+      line-height: 64px;
+      letter-spacing: -1.1200000047683716px;
+    }
 
-      .text-lg lg:text-xl {
-        font-size: 18px;
-        line-height: 22px;
-      }
+    .f-36 {
+      font-size: 36px;
+      line-height: 43px;
+    }
 
-      .f-16 {
-        font-size: 16px;
-        line-height: 20px;
-      }
+    .text-xl lg:text-2xl {
+      font-size: 24px;
+      line-height: 36px;
+    }
 
-      .f-14 {
-        font-size: 14px;
-        line-height: 17px;
-      }
+    .f-20 {
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.015em;
+    }
 
-      .f-12 {
-        font-size: 12px;
-        line-height: 15px;
-      }
+    .text-lg lg:text-xl {
+      font-size: 18px;
+      line-height: 22px;
+    }
 
-      .bg-drk-blu {
-        background: #14566a;
-      }
+    .f-16 {
+      font-size: 16px;
+      line-height: 20px;
+    }
 
-      .bg-pink-shd {
-        background: linear-gradient(180deg, #ffafc6 -4.33%, #ffefd4 109.25%),
-          linear-gradient(177.97deg, #a3e5ff 1.72%, #fff1f1 98.52%);
-      }
+    .f-14 {
+      font-size: 14px;
+      line-height: 17px;
+    }
 
-      .bg-blue-shd {
-        background: linear-gradient(177.97deg, #a3e5ff 1.72%, #fff1f1 98.52%);
-      }
+    .f-12 {
+      font-size: 12px;
+      line-height: 15px;
+    }
 
-      .drk-blu-txt {
-        color: #14566a;
-      }
+    .bg-drk-blu {
+      background: #14566a;
+    }
 
-      .pink-txt {
-        color: #f1647b;
-      }
+    .bg-pink-shd {
+      background: linear-gradient(180deg, #ffafc6 -4.33%, #ffefd4 109.25%),
+        linear-gradient(177.97deg, #a3e5ff 1.72%, #fff1f1 98.52%);
+    }
 
-      .blue-txt {
-        color: #4e84c1;
-      }
+    .bg-blue-shd {
+      background: linear-gradient(177.97deg, #a3e5ff 1.72%, #fff1f1 98.52%);
+    }
 
-      .orange-txt {
-        color: #f07162;
-      }
+    .drk-blu-txt {
+      color: #14566a;
+    }
 
-      .border {
-        border: 1px solid #D1D1D1;
-      }
+    .pink-txt {
+      color: #f1647b;
+    }
 
-      input[type="checkbox"] {
-        width: 25px;
-        height: 25px;
-      }
+    .blue-txt {
+      color: #4e84c1;
+    }
 
-      .marquee-container {
-        overflow: hidden;
-      }
+    .orange-txt {
+      color: #f07162;
+    }
 
-      .marquee-content {
-        display: flex;
-        align-items: center;
-      }
+    .border {
+      border: 1px solid #D1D1D1;
+    }
 
-      .marquee-item {
-        margin: 0 30px;
-      }
+    input[type="checkbox"] {
+      width: 25px;
+      height: 25px;
+    }
 
-      /* global */
+    .marquee-container {
+      overflow: hidden;
+    }
 
-      .drk-orange-bg {
-        background: linear-gradient(90.13deg, #f8a622 -6.56%, #f16679 177.9%);
-      }
+    .marquee-content {
+      display: flex;
+      align-items: center;
+    }
 
-      .primary-button {
-        border-radius: 30px;
-        padding: 0.5em 2em;
-        color: white;
-        text-transform: capitalize;
-      }
+    .marquee-item {
+      margin: 0 30px;
+    }
 
-      .blue-bg {
-        background-color: #28b1da;
-      }
+    /* global */
 
-      .orange-bg {
-        background: #f8a425;
-      }
+    .drk-orange-bg {
+      background: linear-gradient(90.13deg, #f8a622 -6.56%, #f16679 177.9%);
+    }
 
-      .owl-dots {
-        position: absolute;
-        bottom: 2em;
-        right: 0px;
-        left: 0px;
-      }
+    .primary-button {
+      border-radius: 30px;
+      padding: 0.5em 2em;
+      color: white;
+      text-transform: capitalize;
+    }
 
-      .owl-carousel span {
-        width: 17px !important;
-        height: 17px !important;
-        margin: 5px 7px;
-        background: #fff !important;
-        display: block;
-        -webkit-backface-visibility: visible;
-        -webkit-transition: opacity 200ms ease;
-        -moz-transition: opacity 200ms ease;
-        -ms-transition: opacity 200ms ease;
-        -o-transition: opacity 200ms ease;
-        transition: opacity 200ms ease;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
-      }
+    .blue-bg {
+      background-color: #28b1da;
+    }
 
-      .owl-carousel .active span {
-        width: 17px !important;
-        height: 17px !important;
-        margin: 5px 7px;
-        background: #f8a425 !important;
-        display: block;
-        -webkit-backface-visibility: visible;
-        -webkit-transition: opacity 200ms ease;
-        -moz-transition: opacity 200ms ease;
-        -ms-transition: opacity 200ms ease;
-        -o-transition: opacity 200ms ease;
-        transition: opacity 200ms ease;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
-      }
+    .orange-bg {
+      background: #f8a425;
+    }
 
-      /* section based */
+    .owl-dots {
+      position: absolute;
+      bottom: 2em;
+      right: 0px;
+      left: 0px;
+    }
 
-      nav {
-        background-color: white;
-      }
+    .owl-carousel span {
+      width: 17px !important;
+      height: 17px !important;
+      margin: 5px 7px;
+      background: #fff !important;
+      display: block;
+      -webkit-backface-visibility: visible;
+      -webkit-transition: opacity 200ms ease;
+      -moz-transition: opacity 200ms ease;
+      -ms-transition: opacity 200ms ease;
+      -o-transition: opacity 200ms ease;
+      transition: opacity 200ms ease;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+    }
 
-      /* hero */
-      #hero {
-        background-color: white;
-      }
+    .owl-carousel .active span {
+      width: 17px !important;
+      height: 17px !important;
+      margin: 5px 7px;
+      background: #f8a425 !important;
+      display: block;
+      -webkit-backface-visibility: visible;
+      -webkit-transition: opacity 200ms ease;
+      -moz-transition: opacity 200ms ease;
+      -ms-transition: opacity 200ms ease;
+      -o-transition: opacity 200ms ease;
+      transition: opacity 200ms ease;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+    }
 
+    /* section based */
+
+    nav {
+      background-color: white;
+    }
+
+    /* hero */
+    #hero {
+      background-color: white;
+    }
+
+    .owl-item.one {
+      /* background-image:  */
+      background: #fff;
+      background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-1.png");
+      background-image: linear-gradient(360deg,
+          rgba(255, 245, 231, 0.8) 0%,
+          rgba(255, 255, 255, 0) 27.42%),
+        url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .owl-item.two {
+      background: #fff;
+      background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-img-2.png");
+      background-image: linear-gradient(360deg,
+          rgba(255, 245, 231, 0.8) 0%,
+          rgba(255, 255, 255, 0) 27.42%),
+        url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-img-2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .owl-item.three {
+      background: #fff;
+      background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-3.png");
+      background-image: linear-gradient(360deg,
+          rgba(255, 245, 231, 0.8) 0%,
+          rgba(255, 255, 255, 0) 27.42%),
+        url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-3.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .owl-item.four {
+      background: #fff;
+      background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/lady-doc-banner.png');
+      background-image: linear-gradient(360deg, rgba(255, 245, 231, 0.8) 0%, rgba(255, 255, 255, 0) 27.42%),
+        url('https://onecare.co.in/wp-content/uploads/2022/01/lady-doc-banner.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+    }
+
+
+    @media only screen and (max-width: 1300px) {
       .owl-item.one {
-        /* background-image:  */
-        background: #fff;
-        background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-1.png");
-        background-image: linear-gradient(
-            360deg,
-            rgba(255, 245, 231, 0.8) 0%,
-            rgba(255, 255, 255, 0) 27.42%
-          ),
-          url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-1.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        background-position: 70% 100%;
+        background-size: cover;
       }
 
       .owl-item.two {
-        background: #fff;
-        background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-img-2.png");
-        background-image: linear-gradient(
-            360deg,
-            rgba(255, 245, 231, 0.8) 0%,
-            rgba(255, 255, 255, 0) 27.42%
-          ),
-          url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-img-2.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        background-position: 70% 100%;
+        background-size: cover !important;
       }
 
       .owl-item.three {
-        background: #fff;
-        background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-3.png");
-        background-image: linear-gradient(
-            360deg,
-            rgba(255, 245, 231, 0.8) 0%,
-            rgba(255, 255, 255, 0) 27.42%
-          ),
-          url("https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-3.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-      .owl-item.four{
-  background:#fff;
-  background-image:url('https://onecare.co.in/wp-content/uploads/2022/01/lady-doc-banner.png');
-  background-image:linear-gradient(360deg, rgba(255, 245, 231, 0.8) 0%, rgba(255, 255, 255, 0) 27.42%),
-   url('https://onecare.co.in/wp-content/uploads/2022/01/lady-doc-banner.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:contain;
-
-}
-
-
-      @media only screen and (max-width: 1300px) {
-        .owl-item.one {
-          background-position: 70% 100%;
-          background-size: cover;
-        }
-
-        .owl-item.two {
-          background-position: 70% 100%;
-          background-size: cover !important;
-        }
-
-        .owl-item.three {
-          background-position: 70% 100%;
-          background-size: cover !important;
-        }
-        .owl-item.four {
-          background-position: 70% 100%;
-          background-size: cover !important;
-        }
-        .owl-carousel .owl-item {
-          min-height: 700px;
-        }
+        background-position: 70% 100%;
+        background-size: cover !important;
       }
 
-      .one {
-        background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry1.svg");
+      .owl-item.four {
+        background-position: 70% 100%;
+        background-size: cover !important;
       }
 
-      .two {
-        background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry2.svg");
+      .owl-carousel .owl-item {
+        min-height: 700px;
+      }
+    }
+
+    .one {
+      background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry1.svg");
+    }
+
+    .two {
+      background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry2.svg");
+    }
+
+    .three {
+      background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry3.svg");
+    }
+
+    .four {
+      background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry4.svg");
+    }
+
+    .five {
+      background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry5.svg");
+    }
+
+    .number-pic {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-height: 200px;
+      margin-bottom: 2em;
+    }
+
+
+
+    #popup {
+      z-index: 4;
+      width: 100%;
+      top: 0;
+      position: fixed;
+      height: 100vh;
+      background: #00000040;
+
+      display: none;
+    }
+
+    .popup-wrapper {
+      max-width: 700px;
+
+      margin: 200px auto;
+
+      background-color: white;
+      padding: 30px;
+      flex-direction: column;
+    }
+
+    .popup-wrapper input[type="tel"] {
+      border-bottom: 1px solid;
+      font-size: 30px;
+      margin-right: 20px;
+      width: 10%;
+    }
+
+    input[type="radio"] {
+      width: 25px;
+      height: 25px;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    #form input[type="radio"] {
+      border: 1px solid #626262;
+      padding: 8px;
+      border-radius: 8px;
+      -webkit-appearance: none;
+    }
+
+    #form input[type="radio"]:checked {
+      background-color: #28b1da;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .skip-cont {
+      width: 40%;
+    }
+
+    .blu-btn:hover {
+      background-color: #28b1dab3;
+    }
+
+    .org-btn:hover {
+      background: linear-gradient(90.13deg, #ffd28a -6.56%, #f16679 177.9%);
+
+    }
+
+ 
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cont {
+      height: 15px;
+      width: 105px;
+      display: flex;
+      position: relative;
+    }
+
+    .circle {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #28b1da;
+      animation: move 500ms linear 0ms infinite;
+      margin-right: 30px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .circle:last-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 0;
+      animation: grow 500ms linear 0s infinite reverse;
+    }
+
+    .circle:first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: grow 500ms linear 0ms infinite;
+    }
+
+    #partitioned {
+      padding-left: 20px;
+      letter-spacing: 35px;
+      border: 0;
+      background-image: linear-gradient(to left,
+          black 70%,
+          rgba(255, 255, 255, 0) 0%);
+      background-position: bottom;
+      background-size: 50px 1px;
+      background-repeat: repeat-x;
+      background-position-x: 35px;
+      width: 200px;
+      min-width: 200px;
+      font-size: 17px;
+    }
+
+    #divInner {
+      left: 0;
+      position: sticky;
+    }
+
+    #divOuter {
+      width: 190px;
+      overflow: hidden;
+    }
+
+    @keyframes grow {
+      from {
+        transform: scale(0, 0);
+        opacity: 0;
       }
 
-      .three {
-        background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry3.svg");
+      to {
+        transform: scale(1, 1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(0px);
       }
 
-      .four {
-        background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry4.svg");
+      to {
+        transform: translateX(45px);
       }
+    }
 
-      .five {
-        background-image: url("https://onecare.co.in/wp-content/uploads/2022/01/gry5.svg");
-      }
 
-      .number-pic {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        min-height: 200px;
-        margin-bottom: 2em;
-      }
+    .t-head {
+      flex: 1;
+      padding: 2px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      min-width: 130px;
+      color: #f1647b;
+    }
 
-      .accordion-item:not(:first-of-type) {
-        border: 1px solid rgb(229 231 235) !important;
-      }
 
-      #popup {
-        z-index: 4;
-        width: 100%;
-        top: 0;
-        position: fixed;
-        height: 100vh;
-        background: #00000040;
 
-        display: none;
-      }
+    .t-item {
+      justify-content: center;
+      align-items: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #000000;
+      padding: 50px;
+      width: 48%;
+    }
 
-      .popup-wrapper {
-        max-width: 700px;
+    .t-img {
+      flex: 1;
+    }
 
-        margin: 200px auto;
+    .t-img {
+      max-width: 200px;
+    }
 
-        background-color: white;
-        padding: 30px;
+    .t-img img {
+      width: 150px;
+      margin: auto;
+      height: 150px;
+    }
+
+    .t-main {
+      flex: 5;
+      padding: 0px 15px;
+    }
+
+    .t-up {
+      border-bottom: 1px solid #ffe1e6;
+      align-items: stretch;
+    }
+
+    .t-down {
+      align-items: stretch;
+    }
+
+    .t-line::before {
+      content: "";
+      position: relative;
+      top: -11px;
+      display: inline-block;
+      width: 10px;
+      height: 1px;
+      background-color: #f1647b;
+    }
+
+    .t-line {
+      width: 1px;
+      height: inherit;
+      background-color: #f1647b;
+    }
+
+    .t-l-line {
+      width: 1px;
+      height: 700px;
+      background-color: #f1647b;
+    }
+
+    .t-body {
+      flex: 3;
+      padding: 10px;
+    }
+
+    .t-body:nth-child(odd)::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 1px;
+      position: relative;
+      margin: 0px 0px -14px -11px;
+      bottom: 0;
+      background-color: #f1647b;
+    }
+
+    .t-body h2 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 25px;
+    }
+
+    .t-body p {
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 25px;
+    }
+
+    .time-divider::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 1px;
+      position: relative;
+      margin: 0px 0px -14px -11px;
+      bottom: 0;
+      background-color: #a77f86;
+    }
+
+    .t-item:nth-child(odd) {
+      border-right: 2px solid #f1647b;
+    }
+
+    .gry-txt {
+      color: #58595B;
+    }
+
+    .accordion-item {
+
+      border: none;
+      background: #FFFFFF;
+      box-shadow: 0px 20px 40px #EEF0F2;
+      border-radius: 8px;
+    }
+
+    #journey-ring {
+      width: 183px;
+      margin: auto;
+      background-repeat: no-repeat;
+      background-size: 90% 95%;
+      height: 200px;
+      background-image: url(https://onecare.co.in/wp-content/uploads/2022/01/full-ring.png);
+      position: relative;
+      top: -150px;
+
+
+    }
+    @media screen and (max-width: 1000px) {
+      .flex-d {
         flex-direction: column;
       }
 
-      .popup-wrapper input[type="tel"] {
-        border-bottom: 1px solid;
-        font-size: 30px;
-        margin-right: 20px;
-        width: 10%;
-      }
-
-      input[type="radio"] {
-        width: 25px;
-        height: 25px;
-        background-color: white;
-        cursor: pointer;
-      }
-      #form input[type="radio"] {
-			border: 1px solid black;
-			padding: 8px;
-      border-radius: 8px;
-			-webkit-appearance: none;
-		}
-
-		#form input[type="radio"]:checked {
-			background-color: #28b1da;
-		}
-      input:focus {
-        outline: none;
+      .pad-no {
+        padding: 0px;
       }
 
       .skip-cont {
-        width: 40%;
+        width: 100%;
       }
 
-      .blu-btn:hover {
-        background-color: #28b1dab3;
-      }
-      .org-btn:hover{
-        background: linear-gradient(90.13deg, #ffd28a -6.56%, #f16679 177.9%);
-
+      .skip-cont2 {
+        right: -25%;
       }
 
-      @media screen and (max-width: 1000px) {
-        .flex-d {
-          flex-direction: column;
-        }
-
-        .pad-no {
-          padding: 0px;
-        }
-
-        .skip-cont {
-          width: 100%;
-        }
-
-        .skip-cont2 {
-          right: -25%;
-        }
-        .t-item{
-          width: 60%;
-        }
+      .t-item {
+       padding: 10px;
       }
+    }
+  </style>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TFT8B5L');</script>
+</head>
 
-      .box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .cont {
-        height: 15px;
-        width: 105px;
-        display: flex;
-        position: relative;
-      }
-
-      .circle {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: #28b1da;
-        animation: move 500ms linear 0ms infinite;
-        margin-right: 30px;
-      }
-
-      .hide {
-        display: none;
-      }
-
-      .show {
-        display: block;
-      }
-
-      .circle:last-child {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-right: 0;
-        animation: grow 500ms linear 0s infinite reverse;
-      }
-
-      .circle:first-child {
-        position: absolute;
-        top: 0;
-        left: 0;
-        animation: grow 500ms linear 0ms infinite;
-      }
-
-      #partitioned {
-        padding-left: 20px;
-        letter-spacing: 35px;
-        border: 0;
-        background-image: linear-gradient(
-          to left,
-          black 70%,
-          rgba(255, 255, 255, 0) 0%
-        );
-        background-position: bottom;
-        background-size: 50px 1px;
-        background-repeat: repeat-x;
-        background-position-x: 35px;
-        width: 200px;
-        min-width: 200px;
-        font-size: 17px;
-      }
-
-      #divInner {
-        left: 0;
-        position: sticky;
-      }
-
-      #divOuter {
-        width: 190px;
-        overflow: hidden;
-      }
-
-      @keyframes grow {
-        from {
-          transform: scale(0, 0);
-          opacity: 0;
-        }
-
-        to {
-          transform: scale(1, 1);
-          opacity: 1;
-        }
-      }
-
-      @keyframes move {
-        from {
-          transform: translateX(0px);
-        }
-
-        to {
-          transform: translateX(45px);
-        }
-      }
-
-
-		.t-head {
-			flex: 1;
-			padding: 2px;
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-			font-family: Roboto;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 14px;
-			line-height: 18px;
-			min-width: 87px;
-			color: #f1647b;
-		}
-
-
-
-		.t-item {
-			justify-content: center;
-			align-items: center;
-			font-family: Roboto;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 12px;
-			line-height: 14px;
-			color: #000000;
-			padding: 50px  30px;
-			width: 40%;
-		}
-
-		.t-img {
-			flex: 1;
-		}
-
-		.t-img {
-			max-width: 100px;
-		}
-
-		.t-main {
-			flex: 5;
-			padding: 0px 10px;
-		}
-
-		.t-up {
-			border-bottom: 1px solid #ffe1e6;
-			align-items: stretch;
-		}
-
-		.t-down {
-			align-items: stretch;
-		}
-
-		.t-line::before {
-			content: "";
-			position: relative;
-			top: -11px;
-			display: inline-block;
-			width: 10px;
-			height: 1px;
-			background-color: #f1647b;
-		}
-
-		.t-line {
-			width: 1px;
-			height: inherit;
-			background-color: #f1647b;
-		}
-
-		.t-l-line {
-			width: 1px;
-			height: 700px;
-			background-color: #f1647b;
-		}
-
-		.t-body {
-			flex: 3;
-			padding: 10px;
-		}
-
-		.t-body:nth-child(odd)::after {
-			content: "";
-			display: inline-block;
-			width: 10px;
-			height: 1px;
-			position: relative;
-			margin: 0px 0px -14px -11px;
-			bottom: 0;
-			background-color: #f1647b;
-		}
-
-		.t-body h2 {
-			font-size: 18px;
-			font-weight: 600;
-		}
-
-		.t-body p {
-      font-size: 16px;
-    margin-top: 10px;
-    line-height: 19px;
-
-
-		}
-
-		.time-divider::after {
-			content: "";
-			display: inline-block;
-			width: 10px;
-			height: 1px;
-			position: relative;
-			margin: 0px 0px -14px -11px;
-			bottom: 0;
-			background-color: #f1647b;
-		}
-		.t-item:nth-child(odd){
-			border-right: 2px solid #f1647b;
-		}
-      .gry-txt{
-     color: #58595B;
-      }
-      .accordion-item{
-        background: #FFFFFF;
-box-shadow: 0px 20px 40px #EEF0F2;
-border-radius: 8px;
-      }
-
-      #journey-ring{
-        width: 183px;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: 90% 95%;
-    height: 200px;
-    background-image: url(https://onecare.co.in/wp-content/uploads/2022/01/full-ring.png);
-    position: relative;
-    top: -150px;
-
-
-      }
-    </style>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-TFT8B5L');</script>
-  </head>
-
-  <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFT8B5L"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <nav>
-      <div class="flex container mx-auto justify-between py-5">
-        <div class="flex items-center">
-          <a href="/" id="logo">
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/logo.svg"
-              alt="onecare-logo"
-              class="pr-2"
-            />
-          </a>
-          <div class="logo-text pl-2 text=['#58595B']"  style="border-left: 1px solid #58595B;">
-            <p class="gry-txt">A CHAIN OF SMART<br/>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFT8B5L" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <nav>
+    <div class="flex container mx-auto justify-between py-5">
+      <div class="flex items-center">
+        <a href="/" id="logo">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/logo.svg" alt="onecare-logo" class="pr-2" />
+        </a>
+        <div class="logo-text pl-2 text=['#58595B']" style="border-left: 1px solid #58595B;">
+          <p class="gry-txt">A CHAIN OF SMART<br />
             DIABETES CLINICS</p>
-          </div>
-        </div>
-        <div class="flex flex-d items-center">
-          <a
-            href="#08046808989"
-            class="flex items-center mr-2 my-2 blu-btn rounded-lg primary-button blue-bg font-['Inter'] font-bold"
-          >
-            <i class="fa fa-phone mr-2"></i>
-            CONTACT US
-          </a>
-          <a
-            href="#form-wrapper"
-            class="flex items-center ml-2 my-2 primary-button rounded-lg orange-bg font-['Inter'] font-bold"
-          >
-            <i class="fa fa-calculator mr-2"></i>
-            BOOK AN APPOINTMENT
-          </a>
         </div>
       </div>
-    </nav>
-    <main>
-      <section id="popup">
-        <div>
-          <div class="flex items-start popup-wrapper">
-            <h2 class="f-36 drk-blu-txt">OTP Verification</h2>
-            <h3 class="text-xl lg:text-2xl drk-blu-txt">
-              please enter the OTP sent to your mobile
-            </h3>
+      <div class="flex flex-d items-center">
+        <a href="#08046808989"
+          class="flex items-center mr-2 my-2 blu-btn rounded-lg primary-button blue-bg font-['Inter'] font-bold">
+          <i class="fa fa-phone mr-2"></i>
+          CONTACT US
+        </a>
+        <a href="#form-wrapper"
+          class="flex items-center ml-2 my-2 primary-button rounded-lg orange-bg font-['Inter'] font-bold">
+          <i class="fa fa-calculator mr-2"></i>
+          BOOK AN APPOINTMENT
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="popup">
+      <div>
+        <div class="flex items-start popup-wrapper">
+          <h2 class="f-36 drk-blu-txt">OTP Verification</h2>
+          <h3 class="text-xl lg:text-2xl drk-blu-txt">
+            please enter the OTP sent to your mobile
+          </h3>
 
-            <div class="my-10">
-              <h3 class="f-20 my-5">Enter OTP</h3>
-              <form id="popup-form">
-                <div id="divOuter" class="my-5">
-                  <div id="divInner">
-                    <input
-                      id="partitioned"
-                      type="tel"
-                      maxlength="4"
-                      name="otp"
-                    />
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <button
-                    id="resendbtn"
-                    type="button"
-                    class="border rounded p-2 px-5"
-                  >
-                    resendOTP
-                  </button>
-
-                  <input
-                    id="popupbtn"
-                    type="submit"
-                    value="Done"
-                    style="cursor: pointer"
-                    class="mx-5 bg-[#28B1DA] blu-btn text-white rounded p-2 px-5"
-                  />
-                </div>
-
-                <h3 style="font-size: 12px; color: red" id="err-msg"></h3>
-              </form>
-            </div>
-            <div id="loader" class="box hide mx-auto">
-              <div class="cont">
-                <span class="circle"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="hero">
-        <div class="owl-carousel owl-theme owl-loaded">
-          <div class="owl-stage-outer">
-            <div class="owl-stage">
-              <div class="owl-item one">
-                <div class="container mx-auto">
-                  <div class="max-w-[50%] min-h-[40.3vw] py-20 pt-md:32">
-                    <h6
-                      class="text-[#F26975] text-3xl lg:text-5xl font-bold font-['Camphor']"
-                    >
-                      Anup Khees, Age-35 yrs
-                    </h6>
-                    <div
-                      class="flex py-4 text-[#989898] text-xl lg:text-2xl font-bold font-['Lato']"
-                    >
-                      <div class="flex items-center pr-5">
-                        <div>
-                          <img
-                            class="max-w-[40px]"
-                            src="https://onecare.co.in/wp-content/uploads/2022/01/Rh.webp"
-                            alt=""
-                          />
-                        </div>
-                        <h6>92/115</h6>
-                      </div>
-                      <div class="flex items-center">
-                        <div>
-                          <img
-                            class="max-w-[40px]"
-                            src="https://onecare.co.in/wp-content/uploads/2022/01/Pill.svg"
-                            alt=""
-                          />
-                        </div>
-                        <h6>50% Reduction</h6>
-                      </div>
-                    </div>
-                    <p
-                      class="md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl font-['Lato']"
-                    >
-                      My blood sugar level came down to 92/115 and my medicine
-                      dosage also got reduced to half and I'm very sure that it
-                      will stop completely in some time. I'm quite impressed
-                      with the doctor and health coach's style of personalised
-                      treatment.
-                    </p>
-                    <a
-                      href="#form-wrapper"
-                      class="primary-button rounded-lg blue-bg blu-btn text-lg font-['Inter']"
-                    >
-                      Get Started
-                    </a>
-                    <div class="flex items-center pt-4 text-[#838383] text-lg font-['Camphor']">
-                      <p>4.0</p>
-                      <p class="px-2">
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                      <p>1,044 Reviews</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-item two">
-                <div class="container mx-auto">
-                  <div class="max-w-[50%] min-h-[40.3vw] py-20 pt-lg:32">
-                    <h6
-                      class="text-[#28B1DA] text-3xl lg:text-5xl font-bold font-['Camphor']"
-                    >
-                      Don't just fight diabetes, understand & manage it.
-                    </h6>
-
-                    <p
-                      class="md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl font-['Lato'] py-8"
-                    >
-                      Diabetes care is unique to everyone. Beat it with the
-                      Right Approach that works for you.
-                    </p>
-                    <a
-                      href="#form-wrapper"
-                      class="blu-btn primary-button rounded-lg blue-bg text-lg font-['Inter']"
-                    >
-                      Get Started
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-item three">
-                <div class="container mx-auto">
-                  <div class="max-w-[50%] min-h-[40.3vw] py-20 pt-lg:32">
-                    <h6
-                      class="text-[#F26975] text-3xl lg:text-5xl font-bold font-['Camphor']"
-                    >
-                      Live a life beyond diabetes, starting today.
-                    </h6>
-
-                    <p
-                      class="md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl font-['Lato'] py-8"
-                    >
-                      Our team includes leading diabetologists,
-                      endocrinologists, diabetes educators, dieticians, health
-                      coaches all working with you to build a personalised care
-                      plan specific to your need.
-                    </p>
-                    <a
-                      href="#form-wrapper"
-                      class="blu-btn primary-button rounded-lg blue-bg text-lg font-['Inter']"
-                    >
-                      Get Started
-                    </a>
-                  </div>
+          <div class="my-10">
+            <h3 class="f-20 my-5">Enter OTP</h3>
+            <form id="popup-form">
+              <div id="divOuter" class="my-5">
+                <div id="divInner">
+                  <input id="partitioned" type="tel" maxlength="4" name="otp" />
                 </div>
               </div>
 
+              <div class="flex">
+                <button id="resendbtn" type="button" class="border rounded p-2 px-5">
+                  resendOTP
+                </button>
 
-
-
-
-
-
-
-
-              <div class="owl-item four">
-                <div class="container mx-auto">
-                  <div class="max-w-[50%] min-h-[40.3vw] py-20 pt-lg:32">
-                    <h6
-                      class="text-[#28B1DA] text-3xl lg:text-5xl font-bold font-['Camphor']"
-                    >
-                    Skip the travel, 
-                    Take Online Doctor Consultation
-                    </h6>
-                    <div class="mt-10">
-                      <h2 class="f-36 my-5">Private consultation + Audio call</h2>
-                    </div>
-
-                    <div class="m-t-10">
-
-                      <div class="flex items-center my-3 ">
-                        <div style="width:20px; margin-right: 5px;">
-                          <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg"/>
-                        </div>
-                        <p class="f-18 ">Consult With Top Doctors - At your convenience</p>
-                      </div>
-        
-                      <div class="flex items-center my-3 ">
-                        <div style="width:20px; margin-right: 5px;">
-                          <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo"/>
-                          
-                        </div>
-                        <p class="f-18 ">Simple and convenient</p>
-                      </div>
-        
-                      <div class="flex items-center my-3 ">
-                        <div style="width:20px; margin-right: 5px;">
-                          <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo"/>
-                          
-                        </div>
-                        <p class="f-18 ">Risk-free consultation</p>
-                      </div>
-        
-                      <div class="flex items-center my-3 ">
-                        <div style="width:20px; margin-right: 5px;">
-                          <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo"/>
-               
-                        </div>
-                        <p class="f-18 ">Identical clinic experience</p>
-                      </div>
-                      <div class="flex items-center my-3 ">
-                        <div style="width:20px; margin-right: 5px;">
-                          <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg"  alt="logo"/>
-                 
-                        </div>
-                        <p class="f-18 ">First consultation is Free! </p>
-                      </div>
-                      <div class=" mt-5">
-                        <a
-                        href="#form-wrapper"
-                        class="blu-btn primary-button rounded-lg blue-bg text-lg font-['Inter']"
-                      >
-                        Get Started
-                      </a>
-                      </div>
-                    </div>
-               
-                
-                  </div>
-                </div>
+                <input id="popupbtn" type="submit" value="Done" style="cursor: pointer"
+                  class="mx-5 bg-[#28B1DA] blu-btn text-white rounded p-2 px-5" />
               </div>
 
-
-
-
-
-
-
-
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="form-wrapper" class="bg-[#FFF5E7]">
-        <div class="container relative flex flex-d mx-auto py-20">
-          <div style=" top: 50px; left: 0; width:50px;position: absolute;">
-            <img src="https://onecare.co.in/wp-content/uploads/2022/01/unnamed-file-1.png"  alt="logo">
-            </img>
-          </div>
-          <div class="container ">
-          
-            <h2
-              class="font-bold f-w-700 text-2xl lg:text-4xl text-[#F26975] my-10 my-lg:20 px-10"
-            >
-              We know diabetes is a life-altering diagnosis.
-            </h2>
-            <p class="f-20 f-w-400  px-10">
-              Our Comprehensive Clinical Care consists of 1-1 <br/> in-depth doctor
-              consultation, expert dietitian sessions, <br/>and most importantly, a
-              structured roadmap for your diabetes care.
-              
-              <br/><br/>
-              Visit your local
-              OneCare clinic and let's fight it together.
-            </p>
-          </div>
-          <div class="container mx-10">
-            <h2 class="f-w-700  pr-20 text-2xl lg:text-4xl my-10">
-              Start your<span class="text-[#F26975]">
-                personalised diabetic program today!</span
-              >
-            </h2>
-            <form id="form" class="text-lg">
-              <input
-              style=" color: #000000;  border: 1px solid #C2C2C2;"
-                class="px-8 f-w-400 py-3 w-2/3 rounded-md"
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                required
-              />
-              <br />
-
-              <input
-              style=" color: #000000;  border: 1px solid #C2C2C2;"
-                class="my-2 px-8 f-w-400    py-3 w-2/3  rounded-md"
-                type="tel"
-                name="phone"
-                placeholder="Phone"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                title="Please enter a valid phone number"
-                required
-              />
-
-              <div class="flex my-5">
-                <div class="flex items-center mr-10">
-                  <input
-                    class="mr-2 f-w-400 "
-                    type="radio"
-                    id="Online"
-                    name="consultation"
-                    value="Online"
-                    checked
-                  />
-                  <label for="Online">Online Consultation</label>
-                </div>
-
-                <div class="flex flex-d items-center">
-                  <input
-                    class="mr-2 f-w-400 "
-                    type="radio"
-                    id="Clinical"
-                    name="consultation"
-                    value="Clinical"
-                  />
-                  <label for="Clinical">Clinical Consultation</label>
-                </div>
-              </div>
-
-              <input
-                style="cursor: pointer"
-                id="formbtn"
-                class="px-10 f-w-700 mt-5 bg-cyan-500 py-2 blu-btn text-white rounded-md"
-                type="submit"
-                value="Schedule A Free Appointment"
-              />
+              <h3 style="font-size: 12px; color: red" id="err-msg"></h3>
             </form>
           </div>
+          <div id="loader" class="box hide mx-auto">
+            <div class="cont">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="hero">
+      <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item one">
+              <div class="container mx-auto">
+                <div class="max-w-[50%] min-h-[40.3vw] py-20 pt-md:32">
+                  <h6 class="text-[#F26975] text-3xl lg:text-5xl font-bold font-['Camphor']">
+                    Anup Khees, Age-35 yrs
+                  </h6>
+                  <div class="flex py-4 text-[#989898] text-xl lg:text-2xl font-bold font-['Lato']">
+                    <div class="flex items-center pr-5">
+                      <div>
+                        <img class="max-w-[40px]" src="https://onecare.co.in/wp-content/uploads/2022/01/Rh.webp"
+                          alt="" />
+                      </div>
+                      <h6>92/115</h6>
+                    </div>
+                    <div class="flex items-center">
+                      <div>
+                        <img class="max-w-[40px]" src="https://onecare.co.in/wp-content/uploads/2022/01/Pill.svg"
+                          alt="" />
+                      </div>
+                      <h6>50% Reduction</h6>
+                    </div>
+                  </div>
+                  <p class="md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl font-['Lato']">
+                    My blood sugar level came down to 92/115 and my medicine
+                    dosage also got reduced to half and I'm very sure that it
+                    will stop completely in some time. I'm quite impressed
+                    with the doctor and health coach's style of personalised
+                    treatment.
+                  </p>
+                  <a href="#form-wrapper" class="primary-button rounded-lg blue-bg blu-btn text-lg font-['Inter']">
+                    Get Started
+                  </a>
+                  <div class="flex items-center pt-4 text-[#838383] text-lg font-['Camphor']">
+                    <p>4.0</p>
+                    <p class="px-2">
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star"></i>
+                    </p>
+                    <p>1,044 Reviews</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item two">
+              <div class="container mx-auto">
+                <div class="max-w-[50%] min-h-[40.3vw] py-20 pt-lg:32">
+                  <h6 class="text-[#28B1DA] text-3xl lg:text-5xl font-bold font-['Camphor']">
+                    Don't Just Fight Diabetes, Understand & Manage It.
+                  </h6>
+
+                  <p class=" my-20 md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl  font-['Lato'] ">
+                    Diabetes care is unique to everyone. Beat it with the
+                    Right Approach that works for you.
+                  </p>
+                  <a href="#form-wrapper" class="blu-btn primary-button rounded-lg blue-bg text-lg font-['Inter']">
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item three">
+              <div class="container mx-auto">
+                <div class="max-w-[50%] min-h-[40.3vw] py-20 pt-lg:32">
+                  <h6 class="text-[#F26975] text-3xl lg:text-5xl font-bold font-['Camphor']">
+                    Live A Life beyond Diabetes, Starting Today.
+                  </h6>
+
+                  <p class="md:w-[80%] pb-4 text-[#989898] text-lg md:text-xl font-['Lato'] py-8 mb-10">
+                    Our team includes leading diabetologists,
+                    endocrinologists, diabetes educators, dieticians, health
+                    coaches all working with you to build a personalised care
+                    plan specific to your need.
+                  </p>
+                  <a href="#form-wrapper" class="blu-btn primary-button rounded-lg blue-bg text-lg font-['Inter']">
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </div>
 
 
-          <div style="bottom: 0px;
+
+
+
+
+
+
+
+            <div class="owl-item four">
+              <div class="container mx-auto">
+                <div class="max-w-[50%] min-h-[40.3vw] py-20 pt-lg:32">
+                  <h6 class="text-[#28B1DA] text-3xl lg:text-5xl font-bold font-['Camphor']">
+                    Skip The Travel, <br />
+                    Take Online Doctor Consultation
+                  </h6>
+                  <div class="mt-10">
+                    <h2 class="f-36 my-5">Private consultation + Audio call</h2>
+                  </div>
+
+                  <div class="m-t-10">
+
+                    <div class="flex items-center my-3 ">
+                      <div style="width:20px; margin-right: 5px;">
+                        <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg"  alt="logo"/>
+                      </div>
+                      <p class="f-18 ">Consult With Top Doctors - At your convenience</p>
+                    </div>
+
+                    <div class="flex items-center my-3 ">
+                      <div style="width:20px; margin-right: 5px;">
+                        <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo" />
+
+                      </div>
+                      <p class="f-18 ">Simple and convenient</p>
+                    </div>
+
+                    <div class="flex items-center my-3 ">
+                      <div style="width:20px; margin-right: 5px;">
+                        <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo" />
+
+                      </div>
+                      <p class="f-18 ">Risk-free consultation</p>
+                    </div>
+
+                    <div class="flex items-center my-3 ">
+                      <div style="width:20px; margin-right: 5px;">
+                        <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo" />
+
+                      </div>
+                      <p class="f-18 ">Identical clinic experience</p>
+                    </div>
+                    <div class="flex items-center my-3 ">
+                      <div style="width:20px; margin-right: 5px;">
+                        <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo" />
+
+                      </div>
+                      <p class="f-18 ">First consultation is Free! </p>
+                    </div>
+                    <div class=" mt-5">
+                      <a href="#form-wrapper" class="blu-btn primary-button rounded-lg blue-bg text-lg font-['Inter']">
+                        Get Started
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form-wrapper" class="bg-[#FFF5E7]">
+      <div class="container relative flex flex-d mx-auto py-10">
+        <div style=" top:10px; left: 0; width:50px;position: absolute;">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/unnamed-file-1.png" alt="logo">
+          </img>
+        </div>
+        <div class="container ">
+
+          <h2 class="font-bold f-w-700 text-2xl lg:text-4xl text-[#F07162] my-5 my-lg:20 px-10">
+            We know diabetes is a life-altering diagnosis.
+          </h2>
+          <p class="f-20 f-w-400  text-[#616161] px-10">
+            Our Comprehensive Clinical Care consists of 1-1 <br /> in-depth doctor
+            consultation, expert dietitian sessions, <br />and most importantly, a
+            structured roadmap for your <br />diabetes care.
+
+            <br /><br />
+            Visit your local
+            OneCare clinic and let's fight it together.
+          </p>
+        </div>
+        <div class="container mx-10">
+          <h2 class="f-w-700  pr-20 text-2xl lg:text-4xl my-5">
+            Start your<span class="text-[#F07162]">
+              personalised diabetic program today!</span>
+          </h2>
+          <form id="form" class="text-lg">
+            <input style=" color: #000000;  border: 1px solid #C2C2C2;" class="px-8 f-w-400 py-3 w-2/3 rounded-md"
+              type="text" name="name" placeholder="Full Name" required />
+            <br />
+
+            <input style=" color: #000000;  border: 1px solid #C2C2C2;"
+              class="my-2 px-8 f-w-400    py-3 w-2/3  rounded-md" type="tel" name="phone" placeholder="Phone"
+              pattern="[0-9]{10}" maxlength="10" title="Please enter a valid phone number" required />
+
+            <div class="flex my-5">
+              <div class="flex items-center mr-10">
+                <input class="mr-2 f-w-400 " type="radio" id="Online" name="consultation" value="Online" checked />
+                <label class="text-[#626262]" for="Online">Online Consultation</label>
+              </div>
+
+              <div class="flex  items-center">
+                <input class="mr-2 f-w-400 " type="radio" id="Clinical" name="consultation" value="Clinical" />
+                <label class="text-[#626262]" for="Clinical">Clinical Consultation</label>
+              </div>
+            </div>
+
+            <input style="cursor: pointer" id="formbtn"
+              class="px-10 f-w-700 mt-5 bg-cyan-500 py-2 blu-btn text-white rounded-md" type="submit"
+              value="Schedule A Free Appointment" />
+          </form>
+        </div>
+
+
+        <div style="bottom: 0px;
           right: -60px;
           right: -70px;
           width: 120px;
           position: absolute;">
-            <img src="https://onecare.co.in/wp-content/uploads/2022/01/l.png" alt="">
-          </div>
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/l.png" alt="">
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="values">
-        <div class="py-5 bg-drk-blu">
-          <div
-            class="container flex flex-col lg:flex-row justify-center items-center mx-auto"
-          >
-            <div class="flex items-center">
-              <div class="flex flex-col items-center m-10  text-center max-w-xs">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Trust.svg"
-                  alt=""
-                />
-                <p class="my-5 f-16 text-white  f-w-500 f-s-r">
-                  Personalised Diabetes Care <br />program designed 'Just for<br />
-                  you'
-                </p>
-              </div>
-
-              <div class="flex flex-col m-10   items-center text-center">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/People.svg"
-                  alt=""
-                />
-                <p class="my-5 f-16 text-white f-w-500 f-s-r">
-                  A panel of expert<br />
-                  for all your needs
-                </p>
-              </div>
-            </div>
-            <div class="flex items-center">
-              <div class="flex flex-col items-center   m-10 text-center">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Medical_Mobile_App.webp"
-                  alt=""
-                />
-                <p class="my-5 f-16 text-white f-w-500 f-s-r">
-                  State-of-the-art Health Tracking<br />
-                  App customised for you
-                </p>
-              </div>
-              <div class="flex flex-col items-center   m-10 text-center">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Medical_Doctor.webp"
-                  alt=""
-                />
-                <p class="my-5 f-16 text-white f-w-500 f-s-r">
-                  Dedicated Health Coach for <br />
-                  day to day guidance
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="manage" class="py-10">
-        <h2 class="text-center font-bold font-['Camphor']  f-36 my-5">
-          Manage Your Diabetes In 3 Easy Steps
-        </h2>
-
-        <div
-          class="container flex flex-col lg:flex-row justify-center  mx-auto">
-          <div class="flex rounded-md flex-col item-center p-5 m-10 w-2/3 lg:w-1/4 mx-auto  bg-blue-shd">
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/manage1.svg"
-              alt=""/>
-
-            <h4 class="text-center text-xl lg:text-2xl font-bold drk-blu-txt my-3">
-              Step 1
-            </h4>
-            <p class="text-center my-3 f-16 f-w-400">
-              Meet your team of expert diabetologists, health counsellors,
-              dieticians at OneCare Smart Clinics & get expert diagnosis &
-              insights on your diabetes management.
-            </p>
-          </div>
-
-          <div class="flex flex-col rounded-md item-center p-5 m-10 w-2/3 lg:w-1/4 mx-auto bg-pink-shd">
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/manage2.svg"
-              alt=""
-            />
-
-            <h4
-              class="text-center text-xl lg:text-2xl font-bold drk-blu-txt my-3"
-            >
-              Step 2
-            </h4>
-            <p class="f-16 text-center my-3 f-w-400">
-              Get started on a personalised diabetes management journey designed
-              around your needs to help you realise 10x better outcomes.
-            </p>
-          </div>
-          <div class="flex flex-col rounded-md item-center p-5 w-2/3 lg:w-1/4 mx-auto  m-10 bg-blue-shd">
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/manage3.svg"
-              alt=""
-            />
-
-            <h4
-              class="text-xl lg:text-2xl font-bold drk-blu-txt my-3 text-center"
-            >
-              Step 3
-            </h4>
-            <p class="text-center my-3 f-16 f-w-400">
-              Our panel of dedicated Health Coach will be with you every step of
-              the way guiding you towards a better life beyond diabetes
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id=" Diabetologists"  class="py-10 bg-blue-shd">
-        <h2 class="text-center  f-w-700 text-2xl lg:text-4xl my-5">
-          Consult With Our Expert Team Of <br />
-          Endocrinologists & Diabetologists
-          <span class="orange-txt">In Bangalore</span>
-        </h2>
-        <div class="container mx-auto flex flex-col lg:flex-row items-center">
-          <div
-            class="container items-center flex m-10 border-2 border-white rounded-3xl"
-          >
-            <div style="width: 150px;">
-              <img style="    border-radius: 24px;"
-                src="https://onecare.co.in/wp-content/uploads/2022/01/h-min.webp"
-                alt=""
-              />
-            </div>
-            <div class="flex flex-col ml-5">
-              <h3 class="f-16 f-w-700">Dr. Basavaraj GS</h3>
-              <h4 class="f-14 f-w-500">MBBS, MD, DM<br/> (Endocrinology)</h4>
-              <p class="my-2 f-12 f-w-700 pink-txt">
-                13+ years of experience <br />Associated with Narayana
-                Hrudayalaya
+    <section id="values">
+      <div class="py-5 bg-drk-blu">
+        <div class="container flex flex-col lg:flex-row justify-center items-center mx-auto">
+          <div class="flex items-center">
+            <div class="flex flex-col items-center mx-20 my-10   text-center max-w-xs">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Trust.svg" alt="" />
+              <p class="my-5 f-16 text-white  f-w-500 f-s-r">
+                Personalised Diabetes Care <br />program designed 'Just for<br />
+                you'
               </p>
-              <div class="flex items-center">
-                <img style="width: 15px;"
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs-Up.webp"
-                  alt=""
-                />
-                <p class="ml-1 f-12">98% Approval on Practo</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="container flex items-center m-10 border-2 border-white rounded-3xl"
-          >
-            <div>
-              <img
-                src="https://onecare.co.in/wp-content/uploads/2022/01/doc2.svg"
-                alt=""
-              />
             </div>
 
-            <div class="ml-5">
-              <h3 class="f-16 f-w-700">Dr. C Siva Rama Krishna</h3>
-              <h4 class="f-14 f-w-500">MD, M.H. Sc.<br/> (Diabetology)</h4>
-              <p  class="pink-txt f-14 f-w-700 my-2">10+ years of experience</p>
-              <div class="flex items-center">
-                <img style="width: 15px;"
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs-Up.webp"
-                  alt=""
-                />
-                <p class="ml-1 f-12">92% Approval on Practo</p>
-              </div>
+            <div class="flex flex-col mx-20 my-10  items-center text-center">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/People.svg" alt="" />
+              <p class="my-5 f-16 text-white f-w-500 f-s-r">
+                A panel of expert<br />
+                for all your needs
+              </p>
             </div>
           </div>
-          <div
-            class="container flex m-10 items-center border-2 border-white rounded-3xl"
-          >
-            <div>
-              <img
-                src="https://onecare.co.in/wp-content/uploads/2022/01/doc3.svg"
-                alt=""
-              />
-            </div>
-            <div class="ml-5">
-              <h3 class="f-16 f-w-700">Dr. Lavanya</h3>
-              <h4 class="f-14 f-w-500">MBBS (Diabetology)</h4>
-              <p class="pink-txt f-12 my-2">
-                17+ years of experience <br />Associated with Apollo Hospitals
+          <div class="flex items-center">
+            <div class="flex flex-col items-center my-10  mx-20 text-center">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Medical_Mobile_App.webp" alt="" />
+              <p class="my-5 f-16 text-white f-w-500 f-s-r">
+                State-of-the-art Health Tracking<br />
+                App customised for you
               </p>
-              <div class="flex items-center">
-                <img style="width: 15px;"
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs-Up.webp"
-                  alt=""
-                />
-                <p class="ml-1 f-12">91% Approval on Practo</p>
-              </div>
+            </div>
+            <div class="flex flex-col items-center my-10  mx-20 text-center">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Medical_Doctor.webp" alt="" />
+              <p class="my-5 f-16 text-white f-w-500 f-s-r">
+                Dedicated Health Coach for <br />
+                day to day guidance
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="impact" class="py-10">
-        <div class="container mx-auto">
-          <h2 class="f-36  font-['Camphor'] f-w-700">
-            OneCare
-            <span class="text-[#F1647B]"> IMPACT </span>
-            Program
-          </h2>
-          <h4 class="text-2xl f-s-L my-2 f-w-400" >
-            5 Phase Treatment Approach for Type 2 & Pre diabetes
+    <section id="manage" class="py-10">
+      <h2 class="text-center font-bold font-['Camphor']  f-36 my-5">
+        Manage Your Diabetes In 3 Easy Steps
+      </h2>
+
+      <div class="container flex flex-col lg:flex-row justify-center  mx-auto">
+        <div class="flex rounded-md flex-col item-center p-5 m-10 w-2/3 lg:w-1/4 mx-auto  bg-blue-shd">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/manage1.svg" alt="" />
+
+          <h4 class="text-center text-xl lg:text-2xl font-bold drk-blu-txt my-3">
+            Step 1
           </h4>
-          <p class="f-w-400 text-lg max-w-[700px] my-10">
-            Our 5-phase treatment plan is designed to provide you with
-            continuous day to day care at every step of the way & deliver the
-            right knowledge, right approach that is right for your diabetes
-            need. Our plan provides you with a personalised roadmap which
-            ensures you see positive outcomes at each of the five phases.
+          <p class="text-center my-3 f-16 f-w-400">
+            Meet your team of expert diabetologists, health counsellors,
+            dieticians at OneCare Smart Clinics & get expert diagnosis &
+            insights on your diabetes management.
           </p>
-          <div class="timeline py-10 font-['Roboto']">
-            <div class="container mx-auto">
+        </div>
 
-              <div class="flex justify-start" >
-          
-                <div class="flex t-item ">
-                  <div class="t-img">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink1.webp" alt="one">
-                    </img>
-                  </div>
-                  <div class="t-main">
-                    <div class="flex t-up">
-                      <div class="t-head">Lifestyle Insights</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <h2>Duration 0 : 1 week</h2>
-                        <p>
-                          We will begin the programme by getting to know you, your lifestyle, and your
-                          eating habits.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="flex t-down">
-                      <div class="t-head">Outcome</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <p>
-                          You acquire practical knowledge about how we are going to fight your diabetes
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="flex t-item">
-                  <div class="t-img">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink2.webp" alt="one">
-                    </img>
-                  </div>
-                  <div class="t-main">
-                    <div class="flex t-up">
-                      <div class="t-head">A Fruitful Commitment</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <h2>Duration 3 : 6 weeks</h2>
-                        <p>We will help you replace your harmful lifestyle habits with healthy ones.</p>
-                      </div>
-                    </div>
-                    <div class="flex t-down">
-                      <div class="t-head">Outcome</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <p>
-                          From weight reduction to energized physique, your body starts to enjoy a
-                          positive transformation
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          
-          
-              </div>
-          
-              <div class="flex justify-start">
-                <div class="flex t-item">
-                  <div class="t-img">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink3.webp" alt="one">
-                    </img>
-                  </div>
-                  <div class="t-main">
-                    <div class="flex t-up">
-                      <div class="t-head">Accelerated Recovery</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <h2>Duration 8 : 12 weeks</h2>
-                        <p>Provides an extensive treatment plan to help control your diabetes.</p>
-                      </div>
-                    </div>
-                    <div class="flex t-down">
-                      <div class="t-head">Outcome</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <p>
-                          As our detox plan lowers your blood sugar, you will notice your dependence on
-                          medication starting to wane.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex t-item">
-                  <div class="t-img">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink4.webp" alt="one">
-                    </img>
-                  </div>
-                  <div class="t-main">
-                    <div class="flex t-up">
-                      <div class="t-head">Charting A Better Life</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <h2>Duration 3 : 8 weeks</h2>
-                        <p>Here, you will focus on muscle building and strengthening.</p>
-                      </div>
-                    </div>
-                    <div class="flex t-down">
-                      <div class="t-head">Outcome</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <p>Building body muscles, and a sustained feeling of absolute wellness.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="flex justify-start">
-                <div class="flex t-item">
-                  <div class="t-img">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink5.webp" alt="one">
-                    </img>
-                  </div>
-                  <div class="t-main">
-                    <div class="flex t-up">
-                      <div class="t-head">Keeping It<br/> Going</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <h2>Duration 6 : 8 weeks</h2>
-                        <p>
-                          The final phase is meant to help you adjust to your new normal and help you in
-                          sustaining it.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="flex t-down">
-                      <div class="t-head">Outcome</div>
-                      <div class="t-line"></div>
-                      <div class="t-body">
-                        <p>
-                          With healthy habits already ingrained, you can keep diabetes under control
-                          forever.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex t-item">
-                  
-                </div>
-          
-              </div>
-          
-          
-          
-          
-          
+        <div class="flex flex-col rounded-md item-center p-5 m-10 w-2/3 lg:w-1/4 mx-auto bg-pink-shd">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/manage2.svg" alt="" />
+
+          <h4 class="text-center text-xl lg:text-2xl font-bold drk-blu-txt my-3">
+            Step 2
+          </h4>
+          <p class="f-16 text-center my-3 f-w-400">
+            Get started on a personalised diabetes management journey designed
+            around your needs to help you realise 10x better outcomes.
+          </p>
+        </div>
+        <div class="flex flex-col rounded-md item-center p-5 w-2/3 lg:w-1/4 mx-auto  m-10 bg-blue-shd">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/manage3.svg" alt="" />
+
+          <h4 class="text-xl lg:text-2xl font-bold drk-blu-txt my-3 text-center">
+            Step 3
+          </h4>
+          <p class="text-center my-3 f-16 f-w-400">
+            Our panel of dedicated Health Coach will be with you every step of
+            the way guiding you towards a better life beyond diabetes
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id=" Diabetologists" class="py-10 bg-blue-shd">
+      <h2 style="    line-height: 40px;
+        word-spacing: 3px;" class="text-center  f-w-700 text-2xl lg:text-4xl my-5">
+        Consult With Our Expert Team Of <br />
+        Endocrinologists & Diabetologists
+        <span class="orange-txt">In Bangalore</span>
+      </h2>
+      <div class="container mx-auto flex flex-col lg:flex-row items-center">
+        <div class="container items-center flex m-10 border-2 border-white rounded-3xl">
+          <div style="width: 150px;">
+            <img style="    border-radius: 24px;" src="https://onecare.co.in/wp-content/uploads/2022/01/h-min.webp"
+              alt="" />
+          </div>
+          <div class="flex flex-col ml-5">
+            <h3 class="f-16 f-w-700">Dr. Basavaraj GS</h3>
+            <h4 class="f-14 f-w-500">MBBS, MD, DM<br /> (Endocrinology)</h4>
+            <p class="my-2 f-12 f-w-700 pink-txt">
+              13+ years of experience <br />Associated with Narayana
+              Hrudayalaya
+            </p>
+            <div class="flex items-center">
+              <img style="width: 15px;" src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs-Up.webp" alt="" />
+              <p class="ml-1 f-12">98% Approval on Practo</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="py-10 bg-[#FFF5E7]">
-        <div class="container flex-d flex mx-auto ">
-          <div class="flex-1 p-1 m-0 left-0">
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/three.png"
-              alt="grp"
-            />
+        <div class="container flex items-center m-10 border-2 border-white rounded-3xl">
+          <div>
+            <img src="https://onecare.co.in/wp-content/uploads/2022/01/doc2.svg" alt="" />
           </div>
 
-          <div class="flex-1 p-10  pad-no">
-            <h2 class="f-36 font-bold font-['Camphor']  drk-blu-txt">What Our Users Say!</h2>
+          <div class="ml-5">
+            <h3 class="f-16 f-w-700">Dr. C Siva Rama Krishna</h3>
+            <h4 class="f-14 f-w-500">MD, M.H. Sc.<br /> (Diabetology)</h4>
+            <p class="pink-txt f-14 f-w-700 my-2">10+ years of experience</p>
+            <div class="flex items-center">
+              <img style="width: 15px;" src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs-Up.webp" alt="" />
+              <p class="ml-1 f-12">92% Approval on Practo</p>
+            </div>
+          </div>
+        </div>
+        <div class="container flex m-10 items-center border-2 border-white rounded-3xl">
+          <div>
+            <img src="https://onecare.co.in/wp-content/uploads/2022/01/doc3.svg" alt="" />
+          </div>
+          <div class="ml-5">
+            <h3 class="f-16 f-w-700">Dr. Lavanya</h3>
+            <h4 class="f-14 f-w-500">MBBS (Diabetology)</h4>
+            <p class="pink-txt f-12 my-2">
+              17+ years of experience <br />Associated with Apollo Hospitals
+            </p>
+            <div class="flex items-center">
+              <img style="width: 15px;" src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs-Up.webp" alt="" />
+              <p class="ml-1 f-12">91% Approval on Practo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h2 class="text-xl lg:text-2xl drk-blu-txt f-s-L">Over 1000 Reviews</h2>
+    <section id="impact" class="py-10">
+      <div class="container mx-auto">
+        <h2 class="f-36  font-['Camphor'] f-w-700">
+          OneCare
+          <span class="text-[#F1647B]"> IMPACT </span>
+          Program
+        </h2>
+        <h4 class="text-2xl f-s-L my-2 f-w-400">
+          5 Phase Treatment Approach for Type 2 & Pre diabetes
+        </h4>
+        <p class="f-w-400 text-lg max-w-[700px] my-10">
+          Our 5-phase treatment plan is designed to provide you with
+          continuous day to day care at every step of the way & deliver the
+          right knowledge, right approach that is right for your diabetes
+          need. Our plan provides you with a personalised roadmap which
+          ensures you see positive outcomes at each of the five phases.
+        </p>
+        <div class="timeline py-10 font-['Roboto']">
+          <div class="container mx-auto">
 
-            <div class="my-10">
-              <div class="flex items-center bg-white rounded-xl my-5 p-3">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg"
-                  alt=""
-                />
-                <div>
-                  <h3 class="orange-txt font-bold text-lg lg:text-xl">
-                    Laxminarasimha Reddy
-                  </h3>
-                  <p class="f-w-400">
-                    I came all the way from Gulbarga I am Very Happy with Service. Highly professional staff and Doctor thanks to Dr Vikram and Vasu
-                  </p>
+            <div class="flex justify-between">
+
+              <div class="flex t-item ">
+                <div class="t-img">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink1.webp" alt="one">
+                  </img>
+                </div>
+                <div class="t-main">
+                  <div class="flex t-up">
+                    <div class="t-head">Lifestyle Insights</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <h2>Duration 0 : 1 week</h2>
+                      <p>
+                        We will begin the programme by getting to know you, your lifestyle, and your
+                        eating habits.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex t-down">
+                    <div class="t-head">Outcome</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <p>
+                        You acquire practical knowledge about how we are going to fight your diabetes
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="flex items-center bg-white rounded-xl my-5 p-3">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg"
-                  alt=""
-                />
-                <div>
-                  <h3 class="orange-txt font-bold text-lg lg:text-xl">
-                    Deepa Gupta
-                  </h3>
-                  <p class="f-w-400">
-                    A great place for total Diabetes care. The front desk and
-                    customer care explains the program in detail. Doctors and
-                    Dieticians are well qualified. No delay in follow up
-                    consultations too! Would recommend to my family n friends
-                  </p>
+
+              <div class="flex t-item">
+                <div class="t-img">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink2.webp" alt="one">
+                  </img>
+                </div>
+                <div class="t-main">
+                  <div class="flex t-up">
+                    <div class="t-head">A Fruitful Commitment</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <h2>Duration 3 : 6 weeks</h2>
+                      <p>We will help you replace your harmful lifestyle habits with healthy ones.</p>
+                    </div>
+                  </div>
+                  <div class="flex t-down">
+                    <div class="t-head">Outcome</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <p>
+                        From weight reduction to energized physique, your body starts to enjoy a
+                        positive transformation
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div
-                class="flex items-center bg-white rounded-xl  my-5 p-3"
-              >
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg"
-                  alt=""
-                />
-                <div>
-                  <h3 class="orange-txt font-bold text-lg lg:text-xl">
-                    Sakshi Agarwal
-                  </h3>
-                  <p class="f-w-400">
-                    From the booking to the consultation the staff was very
-                    helpful. The consultation was so insightful. The doctor
-                    spent ample time and also answered all my questions. I felt
-                    heard and satisfied with his treatment plan. He also made
-                    very easy suggestions which has motivated me.
-                  </p>
+
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex t-item">
+                <div class="t-img">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink3.webp" alt="one">
+                  </img>
+                </div>
+                <div class="t-main">
+                  <div class="flex t-up">
+                    <div class="t-head">Accelerated Recovery</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <h2>Duration 8 : 12 weeks</h2>
+                      <p>Provides an extensive treatment plan to help control your diabetes.</p>
+                    </div>
+                  </div>
+                  <div class="flex t-down">
+                    <div class="t-head">Outcome</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <p>
+                        As our detox plan lowers your blood sugar, you will notice your dependence on
+                        medication starting to wane.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div class="flex items-center bg-white rounded-xl my-5 p-3">
-                <img
-                  class="mx-5"
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg"
-                  alt=""
-                />
-                <div>
-                  <h3 class="orange-txt font-bold text-lg lg:text-xl">
-                    Prakash Sharma
-                  </h3>
-                  <p class="f-w-400">
-                    The doctor is detail-oriented and listens patiently to what
-                    we have to discuss and share. He shows a great friendly
-                    gesture which encourages to discuss more about the problems
-                    and take proper feedback.
-                  </p>
+              <div class="flex t-item">
+                <div class="t-img">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink4.webp" alt="one">
+                  </img>
+                </div>
+                <div class="t-main">
+                  <div class="flex t-up">
+                    <div class="t-head">Charting A Better Life</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <h2>Duration 3 : 8 weeks</h2>
+                      <p>Here, you will focus on muscle building and strengthening.</p>
+                    </div>
+                  </div>
+                  <div class="flex t-down">
+                    <div class="t-head">Outcome</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <p>Building body muscles, and a sustained feeling of absolute wellness.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <div    class="items-center flex bg-white rounded-xl  my-5 p-3">
-                <img
-                  class="mx-5"
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg"
-                  alt=""
-                />
+            <div class="flex justify-between">
+              <div class="flex t-item">
+                <div class="t-img">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/pink5.webp" alt="one">
+                  </img>
+                </div>
+                <div class="t-main">
+                  <div class="flex t-up">
+                    <div class="t-head">Keeping It<br /> Going</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <h2>Duration 6 : 8 weeks</h2>
+                      <p>
+                        The final phase is meant to help you adjust to your new normal and help you in
+                        sustaining it.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex t-down">
+                    <div class="t-head">Outcome</div>
+                    <div class="t-line"></div>
+                    <div class="t-body">
+                      <p>
+                        With healthy habits already ingrained, you can keep diabetes under control
+                        forever.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex t-item">
+
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 bg-[#FFF5E7]">
+      <div class="container flex-d flex mx-auto ">
+        <div class="flex-1 p-1 m-0 left-0">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/three.png" alt="grp" />
+        </div>
+
+        <div class="flex-1 p-10  pad-no">
+          <h2 class="f-36 font-bold font-['Camphor']  drk-blu-txt">What Our Users Say!</h2>
+
+          <h2 class="text-xl lg:text-2xl drk-blu-txt f-s-L">Over 1000 Reviews</h2>
+
+          <div class="my-10">
+            <div class="flex items-center bg-white rounded-xl my-5 p-3">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg" alt="" />
+              <div>
+                <h3 class="orange-txt font-bold text-lg lg:text-xl">
+                  Laxminarasimha Reddy
+                </h3>
+                <p class="f-w-400">
+                  I came all the way from Gulbarga I am Very Happy with Service. Highly professional staff and Doctor
+                  thanks to Dr Vikram and Vasu
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center bg-white rounded-xl my-5 p-3">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg" alt="" />
+              <div>
+                <h3 class="orange-txt font-bold text-lg lg:text-xl">
+                  Deepa Gupta
+                </h3>
+                <p class="f-w-400">
+                  A great place for total Diabetes care. The front desk and
+                  customer care explains the program in detail. Doctors and
+                  Dieticians are well qualified. No delay in follow up
+                  consultations too! Would recommend to my family n friends
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center bg-white rounded-xl  my-5 p-3">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg" alt="" />
+              <div>
+                <h3 class="orange-txt font-bold text-lg lg:text-xl">
+                  Sakshi Agarwal
+                </h3>
+                <p class="f-w-400">
+                  From the booking to the consultation the staff was very
+                  helpful. The consultation was so insightful. The doctor
+                  spent ample time and also answered all my questions. I felt
+                  heard and satisfied with his treatment plan. He also made
+                  very easy suggestions which has motivated me.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center bg-white rounded-xl my-5 p-3">
+              <img class="mx-5" src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg" alt="" />
+              <div>
+                <h3 class="orange-txt font-bold text-lg lg:text-xl">
+                  Prakash Sharma
+                </h3>
+                <p class="f-w-400">
+                  The doctor is detail-oriented and listens patiently to what
+                  we have to discuss and share. He shows a great friendly
+                  gesture which encourages to discuss more about the problems
+                  and take proper feedback.
+                </p>
+              </div>
+            </div>
+
+
+
+
+            <div id="read-faq" class="hide">
+
+              <div class="items-center flex bg-white rounded-xl  my-5 p-3">
+                <img class="mx-5" src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg" alt="" />
                 <div>
                   <h3 class="orange-txt font-bold text-lg lg:text-xl">
                     Rajesh Talreja
@@ -1599,705 +1402,568 @@ border-radius: 8px;
                 </div>
               </div>
 
-              <div    class="items-center flex bg-white rounded-xl  my-5 p-3">
-                <img
-                  class="mx-5"
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg"
-                  alt=""
-                />
+              <div class="items-center flex bg-white rounded-xl  my-5 p-3">
+                <img class="mx-5" src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg" alt="" />
                 <div>
                   <h3 class="orange-txt font-bold text-lg lg:text-xl">
                     Gayatri
                   </h3>
                   <p class="f-w-400">
-                    Doctor Basavaraj is a brilliant doctor, when I was struggling with medication for my mother for high diabetes after having her operation, we met Dr Basavaraj. Within a week he solved the problem to a large extent. My mother likes to visit The OneCare Diabetes clinic for his patience and polite approach to handle patient queries. 
+                    Doctor Basavaraj is a brilliant doctor, when I was struggling with medication for my mother for high
+                    diabetes after having her operation, we met Dr Basavaraj. Within a week he solved the problem to a
+                    large extent. My mother likes to visit The OneCare Diabetes clinic for his patience and polite
+                    approach to handle patient queries.
                   </p>
                 </div>
               </div>
 
-              <div    class="items-center flex bg-white rounded-xl  my-5 p-3">
-                <img
-                  class="mx-5"
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg"
-                  alt=""
-                />
+              <div class="items-center flex bg-white rounded-xl  my-5 p-3">
+                <img class="mx-5" src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg" alt="" />
                 <div>
                   <h3 class="orange-txt font-bold text-lg lg:text-xl">
-                    Akanksha Pandey 
+                    Akanksha Pandey
                   </h3>
                   <p class="f-w-400">
-                    Doctor Basavaraj is a brilliant doctor, when I was struggling with medication for my mother for high diabetes after having her operation, we met Dr Basavaraj. Within a week he solved the problem to a large extent. My mother likes to visit The OneCare Diabetes clinic for his patience and polite approach to handle patient queries.  </p>
+                    Doctor Basavaraj is a brilliant doctor, when I was struggling with medication for my mother for high
+                    diabetes after having her operation, we met Dr Basavaraj. Within a week he solved the problem to a
+                    large extent. My mother likes to visit The OneCare Diabetes clinic for his patience and polite
+                    approach to handle patient queries. </p>
                 </div>
               </div>
 
-
-
-
             </div>
 
-            <h3 class="text-right drk-blu-txt text-lg lg:text-xl font-bold">
-              Read all customer stories
-            </h3>
+
+
+
           </div>
+          <h3 id="read-faq-btn" class="text-right drk-blu-txt text-lg lg:text-xl font-bold">
+            Read all customer stories
+          </h3>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="visit" class="py-10">
-        <div class="container mx-auto relative">
-          <div class="text-center">
-            <h2 class="orange-txt font-bold f-36 my-5">Our Locations</h2>
-            <p class="f-w-500 text-2xl">
-              We are at 3 locations in Bengaluru
-            </p>
-          </div>
-          <div class="flex items-start container  mx-auto flex-d justify-between py-5">
-            <div class="my-10 mx-auto lg:w-1/3">
-              <div class="border">
-                <div class="flex p-5 justify-between items-center">
-                  <div class="mr-3 w-2/3">
-                    <h3 class="mx-5 text-2xl orange-txt font-bold">
-                      Bellandur
-                    </h3>
+    <section id="visit" class="py-10">
+      <div class="container mx-auto relative">
+        <div class="text-center">
+          <h2 class="orange-txt font-bold f-36 my-5">Our Locations</h2>
+          <p class="f-w-500 text-2xl">
+            We are at 3 locations in Bengaluru
+          </p>
+        </div>
+        <div class="flex items-start container  mx-auto flex-d justify-between py-5">
+          <div class="my-10 mx-10 mx-auto lg:w-1/2">
+            <div class="border">
+              <div class="flex p-5 justify-between items-center">
+                <div class="mr-3 w-2/3">
+                  <h3 class="mx-5 text-2xl orange-txt font-bold">
+                    Bellandur
+                  </h3>
 
-                    <div class="container flex">
-                      <div class="flex items-start my-3">
-                        <img 
-                          src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg"
-                          alt="logo"
-                        />
-                        <p class="  f-18 f-w-400">
-                          Opposit to, Sobha Quartz, 227,Ground Floor, Off,
-                          Outer Ring Rd,
-                          Green Glen Layout, Bellandur,
-                          Bengaluru, Karnataka 560103
-                        </p>
-                      </div>
-                    </div>
-                    <div class="container flex">
-                      <img 
-                        src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg"
-                        alt=""
-                      />
-                      <h4 class=" f-20 f-w-700">080 4680 8989</h4>
-                    </div>
-                    <div class="container mx-5 my-2 items-center flex">
-                      <h4 class="drk-blu-txt">4.9</h4>
-                      <p class="px-3">
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
+                  <div class="container flex">
+                    <div class="flex items-start my-3">
+                      <img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo" />
+                      <p class="  f-18 f-w-400">
+                        Opposit to, Sobha Quartz, 227,Ground Floor, Off,
+                        Outer Ring Rd,
+                        Green Glen Layout, Bellandur,
+                        Bengaluru, Karnataka 560103
                       </p>
                     </div>
                   </div>
-
-                  <div>
-                    <img 
-                      src="https://onecare.co.in/wp-content/uploads/2022/01/weboff1.png"
-                      alt=""
-                    />
+                  <div class="container flex">
+                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="" />
+                    <h4 class=" f-20 f-w-700">080 4680 8989</h4>
+                  </div>
+                  <div class="container mx-5 my-2 items-center flex">
+                    <h4 class="drk-blu-txt">4.9</h4>
+                    <p class="px-3">
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                    </p>
                   </div>
                 </div>
-                <div class="flex justify-between p-0">
-                  <a
-                    target="_blank" 
-                    href="https://www.google.com/maps/dir//onecare+bellandur/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bae13af860deb99:0x370fde6582075187?sa=X&ved=2ahUKEwj304WTlMP1AhXQUWwGHXytBxgQ9Rd6BAgrEAU"
-                    class="     org-btn drk-orange-bg w-1/2 font-bold mr-1 text-center text-xs bg-cyan-500 py-3 text-white rounded-md"
-                    >GET DIRECTIONS
-                  </a>
-                  <a
-                    href="#form-wrapper"
-                    class="  org-btn drk-orange-bg w-1/2 font-bold text-center text-xs bg-cyan-500 py-3 text-white rounded-md"
-                    >BOOK A CONSULTATION
-                  </a>
+
+                <div>
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/weboff1.png" alt="" />
                 </div>
               </div>
-
-              <div class="justify-between my-10 items-center border">
-                <div class="flex p-5 justify-between items-center">
-                  <div class="mr-3 w-2/3 ">
-                    <h3
-                      class="font-bold mx-5 text-xl orange-txt lg:text-2xl"
-                    >
-                      Koramangala
-                    </h3>
-
-                    <div class="container flex">
-                      <div class="flex items-start my-3">
-                        <img
-                          src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg"
-                          alt="logo"
-                        />
-                        <p class="f-16 f-w-400">
-                          No. 81, ST Bed Entrance, off 80
-                          Feet Road, Koramangala 4th
-                          Block, Koramangala, Bengaluru,
-                          Karnataka 560034
-                        </p>
-                      </div>
-                    </div>
-                    <div class="flex">
-                      <img
-                        src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg"
-                        alt=""
-                      />
-                      <h4 class="f-20 f-w-700">080 4680 8989</h4>
-                    </div>
-                    <div class="container mx-5 my-2 items-center flex">
-                      <h4 class="drk-blu-txt font-bold">4.9</h4>
-                      <p class="px-3">
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <img
-                      src="https://onecare.co.in/wp-content/uploads/2022/01/weboff2.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="flex justify-between p-0">
-                  <a
-                    target="_blank"
-                    href="https://www.google.com/maps/dir/12.9129744,77.6421572/onecare+st+bed/@12.923979,77.6271344,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bae15339609fa05:0xe4b01212063f290e!2m2!1d77.6304605!2d12.9348738"
-                    class="     org-btn drk-orange-bg w-1/2 font-bold mr-1 text-center text-xs bg-cyan-500 py-3 text-white rounded-md"
-                    >GET DIRECTIONS
-                  </a>
-                  <a
-                    href="#form-wrapper"
-                    class=" org-btn drk-orange-bg w-1/2 font-bold text-center text-xs bg-cyan-500 py-3 text-white rounded-md"
-                    >BOOK A CONSULTATION
-                  </a>
-                </div>
-              </div>
-
-              <div class="items-center justify-between border">
-                <div class="flex p-5 justify-between items-center">
-                  <div class="mr-3 w-2/3">
-                    <h3
-                      class="mx-5 text-xl lg:text-2xl text-2xl orange-txt font-bold"
-                    >
-                      Indiranagar
-                    </h3>
-
-                    <div class="container flex">
-                      <div class="flex items-start my-3">
-                        <img
-                          src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg"
-                          alt="logo"
-                        />
-                        <p class="f-16  f-w-400">
-                          505/1 1st A Cross Indiranagar 1s
-                          Stage (Near CMH Hospital/Costa Coffee),
-                          Bengaluru, Karnataka 560038
-                        </p>
-                      </div>
-                    </div>
-                    <div class="container flex">
-                      <img
-                        src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg"
-                        alt=""
-                      />
-                      <h4 class="f-20 f-w-700">080 4680 8989</h4>
-                    </div>
-                    <div class="container mx-5 my-2 items-start flex">
-                      <h4 class="drk-blu-txt font-bold">4.9</h4>
-                      <p class="px-3">
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                        <i class="fa fa-star text-yellow-400"></i>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <img
-                      src="https://onecare.co.in/wp-content/uploads/2022/01/weboff3.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="flex justify-between p-0">
-                  <a
-                    target="_blank"
-                    href="https://www.google.com/maps/place/Sattva+Superspeciality+Centre+-+Diabetes,+Thyroid+%26+Endocrinology+Clinic+%2F+Child+Care+Clinic/@12.9787463,77.6440287,15z/data=!4m5!3m4!1s0x0:0x510c519d7abd0642!8m2!3d12.9787463!4d77.6440287?sa=X&ved=2ahUKEwiBuIOAm8P1AhWyzTgGHRAMAnYQ_BJ6BAgbEAU&shorturl=1"
-                    class=" org-btn drk-orange-bg w-1/2 font-bold mr-1 text-center text-xs bg-cyan-500 py-3 text-white rounded-md"
-                    >GET DIRECTIONS
-                  </a>
-                  <a
-                    href="#form-wrapper"
-                    class="  org-btn drk-orange-bg w-1/2 font-bold text-center text-xs bg-cyan-500 py-3 text-white rounded-md"
-                    >BOOK A CONSULTATION
-                  </a>
-                </div>
+              <div class="flex justify-between p-0">
+                <a target="_blank" rel="noreferrer"
+                  href="https://www.google.com/maps/dir//onecare+bellandur/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bae13af860deb99:0x370fde6582075187?sa=X&ved=2ahUKEwj304WTlMP1AhXQUWwGHXytBxgQ9Rd6BAgrEAU"
+                  class="     org-btn drk-orange-bg w-1/2 font-bold mr-1 text-center text-xs bg-cyan-500 py-3 text-white rounded-md">GET
+                  DIRECTIONS
+                </a>
+                <a href="#form-wrapper"
+                  class="  org-btn drk-orange-bg w-1/2 font-bold text-center text-xs bg-cyan-500 py-3 text-white rounded-md">BOOK
+                  A CONSULTATION
+                </a>
               </div>
             </div>
 
+            <div class="justify-between my-10 items-center border">
+              <div class="flex p-5 justify-between items-center">
+                <div class="mr-3 w-2/3 ">
+                  <h3 class="font-bold mx-5 text-xl orange-txt lg:text-2xl">
+                    Koramangala
+                  </h3>
 
-          <div  class="m-10 w-full mx-auto  lg:w-1/2">
+                  <div class="container flex">
+                    <div class="flex items-start my-3">
+                      <img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo" />
+                      <p class="f-16 f-w-400">
+                        No. 81, ST Bed Entrance, off 80
+                        Feet Road, Koramangala 4th
+                        Block, Koramangala, Bengaluru,
+                        Karnataka 560034
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="" />
+                    <h4 class="f-20 f-w-700">080 4680 8989</h4>
+                  </div>
+                  <div class="container mx-5 my-2 items-center flex">
+                    <h4 class="drk-blu-txt font-bold">4.9</h4>
+                    <p class="px-3">
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/weboff2.png" alt="" />
+                </div>
+              </div>
+              <div class="flex justify-between p-0">
+                <a target="_blank" rel="noreferrer"
+                  href="https://www.google.com/maps/dir/12.9129744,77.6421572/onecare+st+bed/@12.923979,77.6271344,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bae15339609fa05:0xe4b01212063f290e!2m2!1d77.6304605!2d12.9348738"
+                  class="     org-btn drk-orange-bg w-1/2 font-bold mr-1 text-center text-xs bg-cyan-500 py-3 text-white rounded-md">GET
+                  DIRECTIONS
+                </a>
+                <a href="#form-wrapper"
+                  class=" org-btn drk-orange-bg w-1/2 font-bold text-center text-xs bg-cyan-500 py-3 text-white rounded-md">BOOK
+                  A CONSULTATION
+                </a>
+              </div>
+            </div>
+
+            <div class="items-center justify-between border">
+              <div class="flex p-5 justify-between items-center">
+                <div class="mr-3 w-2/3">
+                  <h3 class="mx-5 text-xl lg:text-2xl text-2xl orange-txt font-bold">
+                    Indiranagar
+                  </h3>
+
+                  <div class="container flex">
+                    <div class="flex items-start my-3">
+                      <img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo" />
+                      <p class="f-16  f-w-400">
+                        505/1 1st A Cross Indiranagar 1s
+                        Stage (Near CMH Hospital/Costa Coffee),
+                        Bengaluru, Karnataka 560038
+                      </p>
+                    </div>
+                  </div>
+                  <div class="container flex">
+                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="" />
+                    <h4 class="f-20 f-w-700">080 4680 8989</h4>
+                  </div>
+                  <div class="container mx-5 my-2 items-start flex">
+                    <h4 class="drk-blu-txt font-bold">4.9</h4>
+                    <p class="px-3">
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                      <i class="fa fa-star text-yellow-400"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/weboff3.png" alt="" />
+                </div>
+              </div>
+              <div class="flex justify-between p-0">
+                <a target="_blank" rel="noreferrer"
+                  href="https://www.google.com/maps/place/Sattva+Superspeciality+Centre+-+Diabetes,+Thyroid+%26+Endocrinology+Clinic+%2F+Child+Care+Clinic/@12.9787463,77.6440287,15z/data=!4m5!3m4!1s0x0:0x510c519d7abd0642!8m2!3d12.9787463!4d77.6440287?sa=X&ved=2ahUKEwiBuIOAm8P1AhWyzTgGHRAMAnYQ_BJ6BAgbEAU&shorturl=1"
+                  class=" org-btn drk-orange-bg w-1/2 font-bold mr-1 text-center text-xs bg-cyan-500 py-3 text-white rounded-md">GET
+                  DIRECTIONS
+                </a>
+                <a href="#form-wrapper"
+                  class="  org-btn drk-orange-bg w-1/2 font-bold text-center text-xs bg-cyan-500 py-3 text-white rounded-md">BOOK
+                  A CONSULTATION
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="m-10 w-full mx-auto  lg:w-1/2">
             <img src="https://onecare.co.in/wp-content/uploads/2022/01/map.png" alt="">
           </div>
-        
-          </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="journey" class="relative">
-<div style=" position: absolute; top: 0; right:40px; width: 200px; overflow: hidden; height: 170px;">
+    <section id="journey" class="relative">
+      <div style=" position: absolute; top: 0; right:40px; width: 200px; overflow: hidden; height: 170px;">
 
-  <div id="journey-ring">
-   
-  </div> <div id="journey-ring" style="       width: 201px;
+        <div id="journey-ring">
+
+        </div>
+        <div id="journey-ring" style="       width: 201px;
   position: absolute;
   top: -135px;
   right: 9px;
   background-size: cover;"></div>
-</div>
+      </div>
 
 
 
-        <h2 class="drk-blu-txt font-bold  font-['Camphor'] f-36 text-center">
-          Your Journey At OneCare Clinic
-        </h2>
+      <h2 class="drk-blu-txt font-bold  font-['Camphor'] f-36 text-center">
+        Your Journey At OneCare Clinic
+      </h2>
 
-        <div class="container mx-auto flex justify-center py-10">
-          <div
-            class="flex flex-col flex bg-blue-shd items-start p-10 relative rounded-3xl mx-5"
-          >
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/Search.svg"
-              alt=""
-            />
-            <div class="py-5 my-5 border-b-2 w-full border-black">
-              <h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">
-                Health & BCM <br />Analysis
-              </h2>
-            </div>
-            <p class="f-16">
-              Understand your unique body composition <br />which helps you
-              identify areas to improve <br />your overall health
-            </p>
-            <div
-              style="bottom: -25px; left: -25px"
-              class="bg-blue-shd absolute w-16 h-16 rounded-full"
-            ></div>
+      <div class="container mx-auto flex justify-center py-10">
+        <div class="flex flex-col flex bg-blue-shd items-start p-10 relative rounded-3xl mx-5">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/Search.svg" alt="" />
+          <div class="py-5 my-5 border-b-2 w-full border-black">
+            <h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">
+              Health & BCM <br />Analysis
+            </h2>
           </div>
-          <div
-            class="flex flex-col bg-pink-shd items-start p-10 relative rounded-3xl mx-5"
-          >
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/Stethoscope.svg"
-              alt=""
-            />
-            <div class="py-5 my-5 border-b-2 w-full border-black">
-              <h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">
-                Doctor's <br />Consultation
-              </h2>
-            </div>
-            <p class="f-16">
-              Understand your diabetes condition and <br />
-              get a detailed treatment plan to control <br />
-              diabetes
-            </p>
-          </div>
-          <div
-            class="flex flex-col relative bg-blue-shd items-start p-10 rounded-3xl mx-5"
-          >
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/Mortar_and_Pestle.webp"
-              alt="logo"
-            />
-            <div class="py-5 my-5 border-b-2 w-full border-black">
-              <h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">
-                Expert Dietitian <br />Consultation
-              </h2>
-            </div>
-            <p class="f-16">
-              Get a complete lifestyle counseling<br />
-              along with expert tips and suggestions
-            </p>
-            <div
-              style="right: -25px; top: -25px"
-              class="rounded-full w-16 h-16 bg-pink-shd absolute"
-            ></div>
-          </div>
+          <p class="f-16">
+            Understand your unique body composition <br />which helps you
+            identify areas to improve <br />your overall health
+          </p>
+          <div style="bottom: -25px; left: -25px" class="bg-blue-shd absolute w-16 h-16 rounded-full"></div>
         </div>
-      </section>
+        <div class="flex flex-col bg-pink-shd items-start p-10 relative rounded-3xl mx-5">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/Stethoscope.svg" alt="" />
+          <div class="py-5 my-5 border-b-2 w-full border-black">
+            <h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">
+              Doctor's <br />Consultation
+            </h2>
+          </div>
+          <p class="f-16">
+            Understand your diabetes condition and <br />
+            get a detailed treatment plan to control <br />
+            diabetes
+          </p>
+        </div>
+        <div class="flex flex-col relative bg-blue-shd items-start p-10 rounded-3xl mx-5">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/Mortar_and_Pestle.webp" alt="logo" />
+          <div class="py-5 my-5 border-b-2 w-full border-black">
+            <h2 class="drk-blu-txt font-bold text-xl lg:text-2xl">
+              Expert Dietitian <br />Consultation
+            </h2>
+          </div>
+          <p class="f-16">
+            Get a complete lifestyle counseling<br />
+            along with expert tips and suggestions
+          </p>
+          <div style="right: -25px; top: -25px" class="rounded-full w-16 h-16 bg-pink-shd absolute"></div>
+        </div>
+      </div>
+    </section>
 
-      <section id="travel" class="bg-[#FFF5E7]" >
-        <div
-          class="container flex flex-d justify-between items-center mx-auto py-10"
-        >
-          <div class="skip-cont">
-            <div class="my-10">
-              <h2 class="f-36 my-5 font-['Camphor']  font-bold orange-txt">Skip the travel!</h2>
-              <h3 class="text-xl lg:text-2xl font-['Camphor']  ">
-                Take Online Doctor Consultation
-              </h3>
+    <section id="travel" class="bg-[#FFF5E7]">
+      <div class="container flex flex-d justify-between items-center mx-auto py-10">
+        <div class="skip-cont">
+          <div class="my-10">
+            <h2 class="f-36 my-5 font-['Camphor']  font-bold text-[#F1647B]">Skip The Travel!</h2>
+            <h3 class="text-xl lg:text-2xl font-['Camphor']  ">
+              Take Online Doctor Consultation
+            </h3>
 
-              <h2 class="f-36 my-5">Private consultation + Audio call</h2>
-            </div>
-            <div >
-              <div class="m-t-10">
+            <h2 class="f-36 my-5">Private consultation + Audio call</h2>
+          </div>
+          <div>
+            <div class="m-t-10">
 
-                <div class="flex items-center my-3 ">
-                  <div style="width:20px; margin-right: 5px;">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg"/>
-                  </div>
-                  <p class="f-18 ">Consult With Top Doctors - At your convenience</p>
+              <div class="flex items-center my-3 ">
+                <div style="width:20px; margin-right: 5px;">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" />
                 </div>
-  
-                <div class="flex items-center my-3 ">
-                  <div style="width:20px; margin-right: 5px;">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo"/>
-                    
-                  </div>
-                  <p class="f-18 ">Simple and convenient</p>
-                </div>
-  
-                <div class="flex items-center my-3 ">
-                  <div style="width:20px; margin-right: 5px;">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo"/>
-                    
-                  </div>
-                  <p class="f-18 ">Risk-free consultation</p>
-                </div>
-  
-                <div class="flex items-center my-3 ">
-                  <div style="width:20px; margin-right: 5px;">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo"/>
-         
-                  </div>
-                  <p class="f-18 ">Identical clinic experience</p>
-                </div>
-                <div class="flex items-center my-3 ">
-                  <div style="width:20px; margin-right: 5px;">
-                    <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg"  alt="logo"/>
-           
-                  </div>
-                  <p class="f-18 ">First consultation is Free! </p>
-                </div>
-
+                <p class="f-18 ">Consult With Top Doctors - At your convenience</p>
               </div>
-            </div>
 
-            <div class="mt-10">
-              <a
-              href="#form"
-              class="px-10 blu-btn text-lg lg:text-xl mt-5 bg-cyan-500 py-3 text-white rounded-md"
-              >Book Free Appointment
+              <div class="flex items-center my-3 ">
+                <div style="width:20px; margin-right: 5px;">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo" />
+
+                </div>
+                <p class="f-18 ">Simple and convenient</p>
+              </div>
+
+              <div class="flex items-center my-3 ">
+                <div style="width:20px; margin-right: 5px;">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo" />
+
+                </div>
+                <p class="f-18 ">Risk-free consultation</p>
+              </div>
+
+              <div class="flex items-center my-3 ">
+                <div style="width:20px; margin-right: 5px;">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo" />
+
+                </div>
+                <p class="f-18 ">Identical clinic experience</p>
+              </div>
+              <div class="flex items-center my-3 ">
+                <div style="width:20px; margin-right: 5px;">
+                  <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="logo" />
+
+                </div>
+                <p class="f-18 ">First consultation is Free! </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <a href="#form-wrapper"
+              class="px-10 blu-btn text-lg lg:text-xl mt-5 bg-cyan-500 py-3 text-white rounded-md">Book
+              Free Appointment
             </a>
-            </div>
-      
-            <div class="flex items-center pt-4 text-[#838383] text-lg font-['Camphor']">
-              <p>4.0</p>
-              <p class="px-2">
-                <i class="fa fa-star text-yellow-400"></i>
-                <i class="fa fa-star text-yellow-400"></i>
-                <i class="fa fa-star text-yellow-400"></i>
-                <i class="fa fa-star text-yellow-400"></i>
-                <i class="fa fa-star"></i>
-              </p>
-              <p>1,044 Reviews</p>
-            </div>
           </div>
 
-          <div class="skip-cont">
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/lady-doc.png"
-              alt=""
-            />
+          <div class="flex items-center pt-4 text-[#838383] text-lg font-['Camphor']">
+            <p>4.0</p>
+            <p class="px-2">
+              <i class="fa fa-star text-yellow-400"></i>
+              <i class="fa fa-star text-yellow-400"></i>
+              <i class="fa fa-star text-yellow-400"></i>
+              <i class="fa fa-star text-yellow-400"></i>
+              <i class="fa fa-star"></i>
+            </p>
+            <p>1,044 Reviews</p>
           </div>
         </div>
-      </section>
+
+        <div class="skip-cont">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/lady-doc.png" alt="" />
+        </div>
+      </div>
+    </section>
 
 
-      <section id="technology">
-        <div class="container  mx-auto py-10">
-          <h2 class="drk-blu-txt text-2xl lg:text-4xl font-['Camphor'] font-bold text-center">
-            How Technology-Enabled OneCare Diabetes Clinics Provide Better
-            outcomes:
-          </h2>
-          <div class="py-5">
-            <div class="flex justify-around my-5">
-              <p class="w-1/2 text-xl lg:text-2xl s"></p>
-              <div class="">
-                <p class="text-xl  font-['Camphor'] text-[#28B1DA] f-w-700 lg:text-2xl  mr-5">
-                  OneCare Smart<br />
-                  Diabetes Clinics
-                </p>
-              </div>
-              <div class=" font-['Camphor'] f-w-500  w-36 drk-blu-txt texext-2xl font-bold">
-                <p   class="text-xl  font-['Camphor'] f-w-700 drk-blu-txt f-w-700 lg:text-2xl"                            >
-                  Other <br />
-                  Clinics
-                </p>
-              </div>
-            </div>
-            <div class="flex justify-around my-10">
-              <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
-                Top endocrinologists and Diabetologists
+    <section id="technology">
+      <div class="container  mx-auto py-10">
+        <h2 class="drk-blu-txt text-2xl lg:text-4xl font-['Camphor'] font-bold text-center">
+          How Technology-Enabled OneCare Diabetes Clinics Provide Better
+          Outcomes:
+        </h2>
+        <div class="py-5">
+          <div class="flex justify-around my-5">
+            <p class="w-1/2 text-xl lg:text-2xl s"></p>
+            <div class="">
+              <p class="text-xl  font-['Camphor'] text-[#28B1DA] f-w-700 lg:text-2xl  mr-5">
+                OneCare Smart<br />
+                Diabetes Clinics
               </p>
-              <div class="flex w-36 items-center">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png"
-                  alt="logo"
-                />
-
-                <h4 class="">
-                  10+ years of<br />
-                  experience
-                </h4>
-              </div>
-              <div class="flex w-36 items-center">
-                <img
-                  class=""
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Box-Important-1.png"
-                  alt="logo"
-                />
-                <h4 class=" ">
-                  varied<br />
-                  experience
-                </h4>
-              </div>
             </div>
-
-            <div class="flex justify-around my-10">
-              <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
-                Personalized & Sustainable Diabetes control program
+            <div class=" font-['Camphor'] f-w-500  w-36 drk-blu-txt texext-2xl font-bold">
+              <p class="text-xl  font-['Camphor'] f-w-700 drk-blu-txt f-w-700 lg:text-2xl">
+                Other <br />
+                Clinics
               </p>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png"
-                  alt="logo"
-                />
-              </div>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png"
-                  alt="logo"
-                />
-              </div>
             </div>
+          </div>
+          <div class="flex justify-around my-10">
+            <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
+              Top endocrinologists and Diabetologists
+            </p>
+            <div class="flex w-36 items-center">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png" alt="logo" />
 
-            <div class="flex justify-around my-10">
-              <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
-                Smart & remote monitoring by OneCare mobile app
-              </p>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png"
-                  alt="logo"
-                />
-              </div>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png"
-                  alt="logo"
-                />
-              </div>
+              <h4 class="">
+                10+ years of<br />
+                experience
+              </h4>
             </div>
+            <div class="flex w-36 items-center">
+              <img class="" src="https://onecare.co.in/wp-content/uploads/2022/01/Box-Important-1.png" alt="logo" />
+              <h4 class=" ">
+                varied<br />
+                experience
+              </h4>
+            </div>
+          </div>
 
-            <div class="flex justify-around my-10">
-              <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
-                24*7 access to expert dietician
-              </p>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png"
-                  alt="logo"
-                />
-              </div>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png"
-                  alt="logo"
-                />
-              </div>
+          <div class="flex justify-around my-10">
+            <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
+              Personalized & Sustainable Diabetes control program
+            </p>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png" alt="logo" />
             </div>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png" alt="logo" />
+            </div>
+          </div>
 
-            <div class="flex justify-around my-10">
-              <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
-                Dedicated coach with free Weekly Sessions
-              </p>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png"
-                  alt="logo"
-                />
-              </div>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png"
-                  alt="logo"
-                />
-              </div>
+          <div class="flex justify-around my-10">
+            <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
+              Smart & remote monitoring by OneCare mobile app
+            </p>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png" alt="logo" />
             </div>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png" alt="logo" />
+            </div>
+          </div>
 
-            <div class="flex justify-around my-10">
-              <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
-                Free unlimited doctor Follow-ups
-              </p>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png"
-                  alt="logo"
-                />
-              </div>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png"
-                  alt="logo"
-                />
-              </div>
+          <div class="flex justify-around my-10">
+            <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
+              24*7 access to expert dietician
+            </p>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png" alt="logo" />
             </div>
-            <div class="flex justify-around my-10">
-              <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
-                Focus on controlling & Reversing Diabetes
-              </p>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png"
-                  alt="logo"
-                />
-              </div>
-              <div class="w-36">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png"
-                  alt="logo"
-                />
-              </div>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png" alt="logo" />
+            </div>
+          </div>
+
+          <div class="flex justify-around my-10">
+            <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
+              Dedicated coach with free Weekly Sessions
+            </p>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png" alt="logo" />
+            </div>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png" alt="logo" />
+            </div>
+          </div>
+
+          <div class="flex justify-around my-10">
+            <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
+              Free unlimited doctor Follow-ups
+            </p>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png" alt="logo" />
+            </div>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png" alt="logo" />
+            </div>
+          </div>
+          <div class="flex justify-around my-10">
+            <p class="w-1/2 font-['Camphor'] f-w-500  text-xl lg:text-2xl ">
+              Focus on controlling & Reversing Diabetes
+            </p>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Ok.png" alt="logo" />
+            </div>
+            <div class="w-36">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Xbox-X.png" alt="logo" />
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="faq" class="bg-[#FFF5E7]">
-        <div class="container mx-auto py-10">
-          <h3   class="text-4xl text-center p-5 font-['Roboto'] text-[#2A475C] font-bold">
-            FAQs
-          </h3>
-          <div class="flex justify-around flex-d">
-            <div class="accordion r flex-1 m-10" id="accordionExample">
-              <div class="accordion-item bg-white border border-gray-200 mb-10">
-                <h2 class="accordion-header mb-0" id="headingOne">
-                  <button 
-                    class="accordion-button n collapsed  relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none "
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                    What is Type 2 diabetes?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse "
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body py-4 px-5">
-                    Your pancreas, an organ positioned between your stomach and
-                    backbone that aids digestion releases insulin into your
-                    blood. Insulin assists your blood in transporting glucose to
-                    all of your body's cells. Sometimes your body does not
-                    produce enough insulin, or the insulin does not function
-                    properly. Glucose remains in your blood and does not reach
-                    your cells as a result. When your blood glucose levels
-                    become too high, it might lead to diabetes or prediabetes.
-                    Having too much glucose in your blood might lead to health
-                    concerns over time.
-                  </div>
+    <section id="faq" class="bg-[#FFF5E7]">
+      <div class="container mx-auto py-10">
+        <h3 class="text-4xl text-center p-5 font-['Roboto'] text-[#2A475C] font-bold">
+          FAQs
+        </h3>
+        <div class="flex justify-around flex-d">
+          <div class="accordion r flex-1 m-10" id="accordionExample">
+            <div class="accordion-item bg-white border border-gray-200 mb-10">
+              <h2 class="accordion-header mb-0" id="headingOne">
+                <button
+                  class=" text-[#2A475C] f-20 f-w-50 accordion-button n collapsed  relative flex items-center w-full py-4 px-5 text-left bg-white border-0 rounded-none transition focus:outline-none "
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne">
+                  What is Type 2 diabetes?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body py-4 px-5">
+                  Your pancreas, an organ positioned between your stomach and
+                  backbone that aids digestion releases insulin into your
+                  blood. Insulin assists your blood in transporting glucose to
+                  all of your body's cells. Sometimes your body does not
+                  produce enough insulin, or the insulin does not function
+                  properly. Glucose remains in your blood and does not reach
+                  your cells as a result. When your blood glucose levels
+                  become too high, it might lead to diabetes or prediabetes.
+                  Having too much glucose in your blood might lead to health
+                  concerns over time.
                 </div>
               </div>
-              <div class="accordion-item bg-white border border-gray-200 mb-10">
-                <h2 class="accordion-header mb-0" id="headingtwo">
-                  <button
-                    class="accordion-button n collapsed  relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsetwo"
-                    aria-expanded="false"
-                    aria-controls="collapsetwo"
-                  >
-                    How is diabetes diagnosed?
-                  </button>
-                </h2>
-                <div
-                  id="collapsetwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingtwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body py-4 px-5">
-                    <div>
-                      Diabetes is frequently diagnosed clinically as a result of
-                      symptoms such as increased thirst and urination, as well
-                      as recurring infections. Diabetes can be diagnosed by
-                      blood glucose (FBBS which is a fasting blood sugar test
-                      and PPBS which is a post meal sugar test) and HBA1c levels
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item bg-white border border-gray-200 mb-10">
-                <h2 class="accordion-header mb-0" id="headingthree">
-                  <button
-                    class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-lg transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsethree"
-                    aria-expanded="false"
-                    aria-controls="collapsethree"
-                  >
-                    Can diabetes be managed with medicines alone?
-                  </button>
-                </h2>
-                <div
-                  id="collapsethree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingthree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body py-4 px-5">
-                    No. Diabetes is a lifestyle disorder which cannot be managed
-                    with medicines alone. Many factors like diet, physical
-                    activity, stress and other lifestyle habits play a role in
-                    reversal.
-                  </div>
-                </div>
-              </div>
+            </div>
 
+            <div class="accordion-item bg-white border border-gray-200 mb-10">
+              <h2 class="accordion-header mb-0" id="headingtwo">
+                <button
+                  class=" text-[#2A475C] f-20 f-w-50 accordion-button n collapsed  relative flex items-center w-full py-4 px-5  text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false"
+                  aria-controls="collapsetwo">
+                  How is diabetes diagnosed?
+                </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingtwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body py-4 px-5">
+                  <div>
+                    Diabetes is frequently diagnosed clinically as a result of
+                    symptoms such as increased thirst and urination, as well
+                    as recurring infections. Diabetes can be diagnosed by
+                    blood glucose (FBBS which is a fasting blood sugar test
+                    and PPBS which is a post meal sugar test) and HBA1c levels
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-white border border-gray-200 mb-10">
+              <h2 class="accordion-header mb-0" id="headingthree">
+                <button
+                  class=" text-[#2A475C] f-20 f-w-50 accordion-button collapsed relative flex items-center w-full py-4 px-5 text-left bg-white border-0 rounded-lg transition focus:outline-none"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false"
+                  aria-controls="collapsethree">
+                  Can diabetes be managed with medicines alone?
+                </button>
+              </h2>
+              <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body py-4 px-5">
+                  No. Diabetes is a lifestyle disorder which cannot be managed
+                  with medicines alone. Many factors like diet, physical
+                  activity, stress and other lifestyle habits play a role in
+                  reversal.
+                </div>
+              </div>
+            </div>
+            <div class=" hide hide-faq">
               <div class="accordion-item bg-white border border-gray-200 mb-10">
                 <h2 class="accordion-header mb-0" id="headingFour">
                   <button
-                    class="accordion-button  collapsed   relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
+                    class=" text-[#2A475C] f-20 f-w-50 accordion-button  collapsed   relative flex items-center w-full py-4 px-5  text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseFour">
                     What is the OneCare IMPACT program?
                   </button>
                 </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse "
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample2"
-                >
+                <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample2">
                   <div class="accordion-body py-4 px-5">
                     <div>
                       The OneCare IMPACT program aims to provide a path for
@@ -2321,22 +1987,14 @@ border-radius: 8px;
               <div class="accordion-item bg-white border border-gray-200 mb-10">
                 <h2 class="accordion-header mb-0" id="headingFive">
                   <button
-                    class="accordion-button  collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="true"
-                    aria-controls="collapseFive"
-                  >
+                    class=" text-[#2A475C] f-20 f-w-50 accordion-button  collapsed relative flex items-center w-full py-4 px-5  text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
+                    aria-controls="collapseFive">
                     Will the program be customized to my needs?
                   </button>
                 </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse "
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#accordionExample2"
-                >
+                <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample2">
                   <div class="accordion-body py-4 px-5">
                     <div>
                       Yes. We customize and personalize the entire program
@@ -2350,22 +2008,14 @@ border-radius: 8px;
               <div class="accordion-item bg-white border border-gray-200 mb-10">
                 <h2 class="accordion-header mb-0" id="headingSix">
                   <button
-                    class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
+                    class=" text-[#2A475C] f-20 f-w-50 accordion-button collapsed relative flex items-center w-full py-4 px-5 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                    aria-controls="collapseSix">
                     Who is a health coach?
                   </button>
                 </h2>
-                <div
-                  id="collapseSix"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingSix"
-                  data-bs-parent="#accordionExample"
-                >
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample">
                   <div class="accordion-body py-4 px-5">
                     <div>
                       Health Coaches are experts in health, nutrition, exercise,
@@ -2386,119 +2036,95 @@ border-radius: 8px;
                 </div>
               </div>
             </div>
-            <div class="accordion flex-1 m-10" id="accordionExample2">
-              <div class="accordion-item bg-white border border-gray-200 mb-10">
-                <h2 class="accordion-header mb-0" id="headingseven">
-                  <button
-                    class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseseven"
-                    aria-expanded="false"
-                    aria-controls="collapseseven"
-                  >
-                    What are the complications of type 2 diabetes?
-                  </button>
-                </h2>
-                <div
-                  id="collapseseven"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingseven"
-                  data-bs-parent="#accordionExample2"
-                >
-                  <div class="accordion-body py-4 px-5">
-                    <div>
-                      Type 2 diabetes increases the risk of developing several
-                      medical complications. These can include:
-                    </div>
-                    <ul>
-                      <li>Heart and blood vessel problems</li>
-                      <li>Kidney damage (nephropathy)</li>
-                      <li>Eye damage (retinopathy)</li>
-                      <li>Foot damage and amputation</li>
-                      <li>Depression or diabetes distress</li>
-                    </ul>
+
+          </div>
+
+
+          <div class="accordion  flex-1 m-10" id="accordionExample2">
+
+
+
+            <div class="accordion-item bg-white border border-gray-200 mb-10">
+              <h2 class="accordion-header mb-0" id="headingseven">
+                <button
+                  class=" text-[#2A475C] f-20 f-w-50 accordion-button collapsed relative flex items-center w-full py-4 px-5 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false"
+                  aria-controls="collapseseven">
+                  What are the complications of type 2 diabetes?
+                </button>
+              </h2>
+              <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body py-4 px-5">
+                  <div>
+                    Type 2 diabetes increases the risk of developing several
+                    medical complications. These can include:
+                  </div>
+                  <ul>
+                    <li>Heart and blood vessel problems</li>
+                    <li>Kidney damage (nephropathy)</li>
+                    <li>Eye damage (retinopathy)</li>
+                    <li>Foot damage and amputation</li>
+                    <li>Depression or diabetes distress</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-white border border-gray-200 mb-10">
+              <h2 class="accordion-header mb-0" id="headingeight">
+                <button
+                  class=" text-[#2A475C] f-20 f-w-50 accordion-button collapsed relative flex items-center w-full py-4 px-5 text-left bg-white border-0 rounded-sm transition"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false"
+                  aria-controls="collapseeight">
+                  Can diabetes be cured?
+                </button>
+              </h2>
+              <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingeight"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body py-4 px-5">
+                  Diabetes is a lifestyle disorder. Type 2 diabetes can be
+                  “reversed” but not “cured” because the disease will come
+                  back if long-term healthy lifestyle is not successfully
+                  maintained.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-white border border-gray-200 mb-10">
+              <h2 class="accordion-header mb-0" id="headingnine">
+                <button
+                  class=" text-[#2A475C] f-20 f-w-50 accordion-button collapsed relative flex items-center w-full py-4 px-5 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false"
+                  aria-controls="collapsenine">
+                  What does OneCare offer?
+                </button>
+              </h2>
+              <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingnine"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body py-4 px-5">
+                  <div>
+                    OneCare - India's first chain of Smart diabetes Clinics
+                    offer personalised diabetes programmes that's right for
+                    you. Our Comprehensive clinical care consists of 1-1-
+                    in-depth doctor consultations, expert dietitian sessions,
+                    and most importantly, a structured roadmap for your
+                    diabetes care.
                   </div>
                 </div>
               </div>
-              <div class="accordion-item bg-white border border-gray-200 mb-10">
-                <h2 class="accordion-header mb-0" id="headingeight">
-                  <button
-                    class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseeight"
-                    aria-expanded="false"
-                    aria-controls="collapseeight"
-                  >
-                    Can diabetes be cured?
-                  </button>
-                </h2>
-                <div
-                  id="collapseeight"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingeight"
-                  data-bs-parent="#accordionExample2"
-                >
-                  <div class="accordion-body py-4 px-5">
-                    Diabetes is a lifestyle disorder. Type 2 diabetes can be
-                    “reversed” but not “cured” because the disease will come
-                    back if long-term healthy lifestyle is not successfully
-                    maintained.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item bg-white border border-gray-200 mb-10">
-                <h2 class="accordion-header mb-0" id="headingnine">
-                  <button
-                    class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsenine"
-                    aria-expanded="false"
-                    aria-controls="collapsenine"
-                  >
-                    What does OneCare offer?
-                  </button>
-                </h2>
-                <div
-                  id="collapsenine"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingnine"
-                  data-bs-parent="#accordionExample2"
-                >
-                  <div class="accordion-body py-4 px-5">
-                    <div>
-                      OneCare - India's first chain of Smart diabetes Clinics
-                      offer personalised diabetes programmes that's right for
-                      you. Our Comprehensive clinical care consists of 1-1-
-                      in-depth doctor consultations, expert dietitian sessions,
-                      and most importantly, a structured roadmap for your
-                      diabetes care.
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div class="hide hide-faq">
 
               <div class="accordion-item bg-white border border-gray-200 mb-10">
                 <h2 class="accordion-header mb-0" id="headingten">
                   <button
-                    class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseten"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
+                    class=" text-[#2A475C] f-20 f-w-50 accordion-button collapsed relative flex items-center w-full py-4 px-5  text-left bg-white border-0 rounded-sm transition"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false"
+                    aria-controls="collapseSix">
                     Is this program sufficient to manage my diabetes?
                   </button>
                 </h2>
-                <div
-                  id="collapseten"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingten"
-                  data-bs-parent="#accordionExample2"
-                >
+                <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingten"
+                  data-bs-parent="#accordionExample2">
                   <div class="accordion-body py-4 px-5">
                     Yes. The OneCare diabetes program takes complete care of
                     your diabetes. We connect you to the best endocrinologist,
@@ -2511,22 +2137,14 @@ border-radius: 8px;
               <div class="accordion-item bg-white border border-gray-200 mb-10">
                 <h2 class="accordion-header mb-0" id="headingeleven">
                   <button
-                    class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseeleven"
-                    aria-expanded="false"
-                    aria-controls="collapseeleven"
-                  >
+                    class=" text-[#2A475C] f-20 f-w-50 accordion-button collapsed relative flex items-center w-full py-4 px-5 text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseeleven" aria-expanded="false"
+                    aria-controls="collapseeleven">
                     What are the benefits of the program?
                   </button>
                 </h2>
-                <div
-                  id="collapseeleven"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingeleven"
-                  data-bs-parent="#accordionExample2"
-                >
+                <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingeleven"
+                  data-bs-parent="#accordionExample2">
                   <div class="accordion-body py-4 px-5">
                     <div>
                       Apart from blood sugar reduction, other benefits of the
@@ -2551,277 +2169,239 @@ border-radius: 8px;
               <div class="accordion-item bg-white border border-gray-200 mb-10">
                 <h2 class="accordion-header mb-0" id="headingtwelve">
                   <button
-                    class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-sm transition focus:outline-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsetwelve"
-                    aria-expanded="false"
-                    aria-controls="collapsetwelve"
-                  >
+                    class=" text-[#2A475C] f-20 f-w-50 accordion-button collapsed relative flex items-center w-full py-4 px-5   text-left bg-white border-0 rounded-sm transition focus:outline-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwelve" aria-expanded="false"
+                    aria-controls="collapsetwelve">
                     Will the health coach offer me personal counselling?
                   </button>
                 </h2>
-                <div
-                  id="collapsetwelve"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingtwelve"
-                  data-bs-parent="#accordionExample2"
-                >
+                <div id="collapsetwelve" class="accordion-collapse collapse" aria-labelledby="headingtwelve"
+                  data-bs-parent="#accordionExample2">
                   <div class="accordion-body py-4 px-5">
                     Yes, The health coach will give you a personalised plan
                     which will cater to your needs and goals.
                   </div>
                 </div>
               </div>
+
+
+            </div>
+
+          </div>
+        </div>
+        <div class="rounded-md blu-btn"
+          style="cursor: pointer; background-color:  #28b1da; padding: 5px; max-width: 100px; margin: auto;">
+          <h4 id="faq-btn" style="text-align: center; color: white; font-weight:700 ;">View All</h4>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="marquee" class=" container items-center mx-auto py-10 flex">
+      <div>
+        <img src="https://onecare.co.in/wp-content/uploads/2022/01/In-the-News-_.png" alt="" />
+      </div>
+      <div style="width: 90%;">
+
+        <div class="marquee-container">
+
+          <div class="marquee-content">
+
+
+            <div class="marquee-item">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/vccircle-4.png" alt="" />
+            </div>
+
+            <div class="marquee-item">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/yourstore-3.png" alt="" />
+            </div>
+
+            <div class="marquee-item">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/healthcare-1.png" alt="" />
+            </div>
+            <div class="marquee-item">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/indianstartup.png" alt="" />
+            </div>
+            <div class="marquee-item">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/vccircle.png" alt="" />
+            </div>
+
+            <div class="marquee-item">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/Vector.png" alt="" />
+            </div>
+
+            <div class="marquee-item">
+              <img src="https://onecare.co.in/wp-content/uploads/2022/01/healthcare-1.png" alt="" />
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="bg-[#F1F1F1]">
-        <div class="container py-10 px-20">
-          <h3 class=" f-20 f-s-L">
-            <strong> Popular searches:</strong
-            ><span class="f-16  text-gray-400">
-              Diabetes, diabetes care, best endocrinologist, top diabetes
-              clinic, diabetologist near me, best diabetic doctors in bangalore,
-              diabetes clinic near me, diabetes hospital near me, diabetes
-              specialist, Diabetes treatment, diabetes control, type 2 diabetes,
-              diabetes symptoms,</span
-            >
-          </h3>
-        </div>
-      </section>
-      <section id="marquee">
-        <div class="container mx-auto py-10">
-          <div class="marquee-container">
-            <div class="marquee-content">
-              <div class="marquee-item">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/In-the-News-_.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/vccircle-4.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/yourstore-3.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/healthcare-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="marquee-item">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/indianstartup.png"
-                  alt=""
-                />
-              </div>
-              <div class="marquee-item">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/vccircle.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/Vector.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="https://onecare.co.in/wp-content/uploads/2022/01/healthcare-1.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="consult" class="bg-drk-blu">
-        <div class="flex items-center justify-between container mx-auto ">
-          <div class="font-['Camphor'] text-white py-12 lg:pr-36">
-            <h4 class="text-4xl py-4">Still delaying your health concerns?</h4>
-            <h6 class="text-2xl py-4">Connect with india's top doctors</h6>
-          </div>
-          <div>
-            <a
-              href="#form-wrapper"
-              class="blu-btn primary-button rounded-md blue-bg text-xl"
-              >Consult Now</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container mx-auto flex justify-between items-center p-4">
-        <div>
-          <a href="/" id="logo">
-            <img
-              src="https://onecare.co.in/wp-content/uploads/2022/01/OneCare_Logo-03_3.webp"
-              alt="onecare-logo"
-              class="pr-2"
-            />
-          </a>
-        </div>
-        <div>
-          <p class="mr-2 font-['Lato']">© 2021, OneCare. All Rights Reserved</p>
         </div>
       </div>
-    </footer>
+    </section>
+    <section class="bg-[#F1F1F1]">
+      <div class="container py-10 px-20">
+        <h3 style="text-transform: capitalize;" class=" f-20 f-s-L">
+          <strong> Popular searches:</strong><span class="f-16  text-gray-400">
+            Diabetes, diabetes care, best endocrinologist, top diabetes
+            clinic, diabetologist near me, best diabetic doctors in bangalore,
+            diabetes clinic near me, diabetes hospital near me, diabetes
+            specialist, Diabetes treatment, diabetes control, type 2 diabetes,
+            diabetes symptoms,</span>
+        </h3>
+      </div>
+    </section>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        var phoneValue = 0;
-        var name = "";
-        var consultation = "";
-        var otp = "";
+    <section id="consult" class="bg-drk-blu">
+      <div class="flex items-center justify-between container mx-auto ">
+        <div class="font-['Camphor'] text-white py-12 lg:pr-36">
+          <h4 style="text-transform: capitalize;" class="text-4xl py-4">Still delaying your health concerns?</h4>
+          <h6 style="text-transform: capitalize;" class="text-2xl py-4">Connect with india's top doctors</h6>
+        </div>
+        <div>
+          <a href="#form-wrapper" class="blu-btn primary-button rounded-md blue-bg text-xl">Consult Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div>
+        <a href="/" id="logo">
+          <img src="https://onecare.co.in/wp-content/uploads/2022/01/OneCare_Logo-03_3.webp" alt="onecare-logo"
+            class="pr-2" />
+        </a>
+      </div>
+      <div>
+        <p class="mr-2 font-['Lato']">© 2021, OneCare. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
 
-        var form = document.getElementById("form");
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          $("#popup").show();
-          phoneValue = e.target.phone.value;
-          name = e.target.name.value;
-          consultation = e.target.consultation.value;
-          resend();
-        });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var phoneValue = 0;
+      var name = "";
+      var consultation = "";
+      var otp = "";
 
-        $("#resendbtn").click(() => {
-          resend();
-        });
-
-        var popup = document.getElementById("popup-form");
-        popup.addEventListener("submit", (e) => {
-          e.preventDefault();
-          otp = e.target.otp.value;
-          let url = "https://onecare.co.in/wp-json/api/v1/verify-otp-web";
-          $("#loader").removeClass("hide");
-          $("#loader").addClass("show");
-          fetch(url, {
-            headers: { "Content-Type": "Application/json" },
-            method: "POST",
-            mode: "cors",
-            body: JSON.stringify({
-              phone: phoneValue,
-              otp: otp,
-              name: name,
-              consultation: consultation,
-            }),
-          })
-            .then((data) => data.json())
-            .then((resp) => {
-              console.log(resp);
-              if (resp.Status==="Success") {
-                window.location.href = "http://onecare.co.in/thankyou";
-              } else {
-                $("#loader").removeClass("show");
-                $("#loader").addClass("hide");
-                $("#err-msg").append(resp.message);
-              }
-            })
-            .catch((err) => {
-              console.log(err);
-            });
-        });
-        function resend() {
-          let url = "https://onecare.co.in/wp-json/api/v1/send-otp";
-          fetch(url, {
-            headers: {
-              "Content-Type": "Application/json",
-            },
-            method: "POST",
-            mode: "cors",
-            body: JSON.stringify({ phone: phoneValue }),
-          })
-            .then((resp) => resp.json())
-            .then((data) => console.log(data))
-            .catch((err) => console.log(err));
-        }
-
-        $(".marquee-container").marquee({
-          direction: "left",
-          duration: 14000,
-          gap: 50,
-          delayBeforeStart: 0,
-          duplicated: true,
-          startVisible: true,
-        });
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          responsiveClass: true,
-          autoScroll: true,
-          responsive: {
-            0: {
-              items: 1,
-              nav: false,
-            },
-            600: {
-              items: 1,
-              nav: false,
-            },
-            1000: {
-              items: 1,
-              nav: false,
-              loop: false,
-            },
-          },
-        });
+      var form = document.getElementById("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        $("#popup").show();
+        phoneValue = e.target.phone.value;
+        name = e.target.name.value;
+        consultation = e.target.consultation.value;
+        resend();
       });
-    </script>
-    <script src="./script.js"></script>
-  </body>
+
+      $("#resendbtn").click(() => {
+        resend();
+      });
+
+      var popup = document.getElementById("popup-form");
+      popup.addEventListener("submit", (e) => {
+        e.preventDefault();
+        otp = e.target.otp.value;
+        let url = "https://onecare.co.in/wp-json/api/v1/verify-otp-web";
+        $("#loader").removeClass("hide");
+        $("#loader").addClass("show");
+        fetch(url, {
+          headers: { "Content-Type": "Application/json" },
+          method: "POST",
+          mode: "cors",
+          body: JSON.stringify({
+            phone: phoneValue,
+            otp: otp,
+            name: name,
+            consultation: consultation,
+          }),
+        })
+          .then((data) => data.json())
+          .then((resp) => {
+            console.log(resp);
+            if (resp.Status === "Success") {
+              window.location.href = "http://onecare.co.in/thankyou";
+            } else {
+              $("#loader").removeClass("show");
+              $("#loader").addClass("hide");
+              $("#err-msg").append(resp.message);
+            }
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      });
+      function resend() {
+        let url = "https://onecare.co.in/wp-json/api/v1/send-otp";
+        fetch(url, {
+          headers: {
+            "Content-Type": "Application/json",
+          },
+          method: "POST",
+          mode: "cors",
+          body: JSON.stringify({ phone: phoneValue }),
+        })
+          .then((resp) => resp.json())
+          .then((data) => console.log(data))
+          .catch((err) => console.log(err));
+      }
+
+      $(".marquee-container").marquee({
+        direction: "left",
+        duration: 14000,
+        gap: 50,
+        delayBeforeStart: 0,
+        duplicated: true,
+        startVisible: true,
+      });
+      $(".owl-carousel").owlCarousel({
+        nav: true,
+        rewindNav: false,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: false,
+          },
+        },
+      });
+    });
+
+
+    $("#faq-btn").click(() => {
+
+      $(".hide-faq").toggle(100)
+    })
+
+
+    $("#read-faq-btn").click(() => {
+
+      $("#read-faq").toggle(100)
+
+    })
+  </script>
+
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php
